@@ -1,0 +1,51 @@
+@import "styles/variables.scss";
+
+.header {
+  background-color: $c-resolutionBlue;
+
+  &__bar {
+    display: flex;
+    max-width: 1140px;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 16px;
+    box-sizing: border-box;
+  }
+
+  &__main {
+    padding: 8px 0;
+
+    img {
+      height: 24px;
+    }
+  }
+
+  &__group {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  &__item {
+    margin-left: 8px;
+  }
+
+  &__tab {
+    max-width: 1140px;
+    margin: auto;
+  }
+
+  &__nav {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__nav__item {
+    padding: 16px;
+    font-size: 14px;
+  }
+}
