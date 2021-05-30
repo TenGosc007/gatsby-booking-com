@@ -9,8 +9,20 @@ import {
   header__tab,
   header__nav,
   header__nav__item,
+  simplebtn,
+  img_circle,
+  btn_inverted,
+  btn_primary,
 } from "./header.module.scss";
+
 import logo from "assets/booking_logo.svg";
+import iconPoland from "assets/poland.png";
+import iconBed from "assets/bed.svg";
+import iconPlane from "assets/plane.svg";
+import iconCar from "assets/car.svg";
+import iconRollercoster from "assets/rollercoster.svg";
+import iconTaxi from "assets/taxi.svg";
+import iconQuestion from "assets/question.svg";
 
 const Header = () => {
   return (
@@ -22,33 +34,52 @@ const Header = () => {
 
         <div className={header__group}>
           <div className={header__item}>
-            <button>PLN</button>
+            <button className={simplebtn}>PLN</button>
           </div>
           <div className={header__item}>
-            <button>PLN</button>
+            <button className={simplebtn}>
+              <img className={img_circle} src={iconPoland} alt="pl" />
+            </button>
           </div>
           <div className={header__item}>
-            <button>?</button>
+            <button className={simplebtn}>
+              <img src={iconQuestion} alt="?" />
+            </button>
           </div>
           <div className={header__item}>
-            <button>Udostępnij obiekt</button>
+            <button className={btn_inverted}>Udostępnij obiekt</button>
           </div>
           <div className={header__item}>
-            <button>Zarejestruj się</button>
+            <button className={btn_primary}>Zarejestruj się</button>
           </div>
           <div className={header__item}>
-            <button>Zaloguj się</button>
+            <button className={btn_primary}>Zaloguj się</button>
           </div>
         </div>
       </div>
 
       <div className={header__tab}>
         <ul className={header__nav}>
-          <li className={header__nav__item}>Pobyty</li>
-          <li className={header__nav__item}>Loty</li>
-          <li className={header__nav__item}>Wynajem samochodów</li>
-          <li className={header__nav__item}>Atrakcje</li>
-          <li className={header__nav__item}>Taksówki lotniskowe</li>
+          <li className={header__nav__item}>
+            <img src={iconBed} alt="icon"></img>
+            <span>Pobyty</span>
+          </li>
+          <li className={header__nav__item}>
+            <img src={iconPlane} alt="icon"></img>
+            <span>Loty</span>
+          </li>
+          <li className={header__nav__item}>
+            <img src={iconCar} alt="icon"></img>
+            <span>Wynajem samochodów</span>
+          </li>
+          <li className={header__nav__item}>
+            <img src={iconRollercoster} alt="icon"></img>
+            <span>Atrakcje</span>
+          </li>
+          <li className={header__nav__item}>
+            <img src={iconTaxi} alt="icon"></img>
+            <span>Taksówki lotniskowe</span>
+          </li>
         </ul>
       </div>
     </div>

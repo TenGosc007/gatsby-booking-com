@@ -5,19 +5,19 @@
 
   &__bar {
     display: flex;
-    max-width: 1140px;
+    max-width: $break-desktop;
     margin: auto;
     justify-content: space-between;
     align-items: center;
-    padding: 8px 16px;
+    padding: $space-x-small $space-standard;
     box-sizing: border-box;
   }
 
   &__main {
-    padding: 8px 0;
+    padding: $space-x-small 0;
 
     img {
-      height: 24px;
+      height: $space-medium;
     }
   }
 
@@ -28,11 +28,11 @@
   }
 
   &__item {
-    margin-left: 8px;
+    margin-left: $space-x-small;
   }
 
   &__tab {
-    max-width: 1140px;
+    max-width: $break-x-mid;
     margin: auto;
   }
 
@@ -45,7 +45,55 @@
   }
 
   &__nav__item {
-    padding: 16px;
-    font-size: 14px;
+    padding: $space-standard;
+    font-size: $space-small;
+    display: flex;
+    align-items: center;
+
+    img {
+      margin-right: $space-x-small;
+    }
+  }
+
+  .simplebtn {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: $c-white;
+    padding: pxToRem(12);
+    min-width: $space-x-large;
+    min-height: $space-x-large;
+    line-height: 0;
+    font-size: $space-standard;
+    box-sizing: border-box;
+  }
+
+  .img_circle {
+    width: $space-medium;
+    height: $space-medium;
+    border-radius: 50%;
+    box-sizing: border-box;
+  }
+
+  .btn_inverted {
+    border: pxToRem(1) solid $c-white;
+    outline: none;
+    background-color: transparent;
+    color: $c-white;
+    padding: $space-x-small $space-standard;
+    font-size: $space-small;
+    line-height: $space-medium;
+    border-radius: pxToRem(2);
+  }
+
+  .btn_primary {
+    border: pxToRem(1) solid $c-lochmara;
+    outline: none;
+    background-color: $c-white;
+    color: $c-lochmara;
+    padding: $space-x-small $space-standard;
+    font-size: $space-small;
+    line-height: $space-medium;
+    border-radius: pxToRem(2);
   }
 }

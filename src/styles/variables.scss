@@ -6,17 +6,20 @@ $c-cloudy: #a7a6a5;
 $c-opacity: #0000001a;
 
 $c-resolutionBlue: #003580;
+$c-lochmara: #0071c2;
 
 // Fonts
 //==========================================================================
-$f-baseFontFamily: "Montserrat", sans-serif;
+$f-baseFontFamily: "Roboto", sans-serif;
 
 // Breaks
 //==========================================================================
 $break-xs: 374px;
 $break-mobile: 767px;
 $break-mid: 991px;
+$break-x-mid: 1144px;
 $break-laptop: 1299px;
+$break-desktop: 1440px;
 $break-high: 1600px;
 
 // Minimum device sizes
@@ -43,12 +46,12 @@ $card-mobile-xxs: 110px;
 
 // Paddings, Margins
 //==========================================================================
-$space-x-small: 10px;
-$space-small: 15px;
-$space-standard: 20px;
-$space-medium: 30px;
-$space-large: 40px;
-$space-x-large: 50px;
+$space-x-small: 8px;
+$space-small: 14px;
+$space-standard: 16px;
+$space-medium: 24px;
+$space-large: 32px;
+$space-x-large: 48px;
 $space-xx-large: 60px;
 
 // Buttons

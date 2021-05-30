@@ -5,12 +5,12 @@
 html {
   font-size: 16px;
   scroll-behavior: smooth;
-  font-family: "Roboto", sans-serif;
+  font-family: $f-baseFontFamily;
   overflow-y: hidden;
 }
 
 body {
-  font: normal normal normal 1rem "Roboto";
+  font: normal normal normal 1rem $f-baseFontFamily;
   background-color: $c-white;
   color: $c-white;
 }
