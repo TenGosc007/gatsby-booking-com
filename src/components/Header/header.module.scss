@@ -1,7 +1,9 @@
 @import "styles/variables.scss";
+@import "styles/mixins.scss";
 
 .header {
   background-color: $c-resolutionBlue;
+  position: relative;
 
   &__bar {
     display: flex;
@@ -21,10 +23,15 @@
     }
   }
 
-  &__group {
+  &__group,
+  &__mobile {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+  }
+
+  &__mobile {
+    display: none;
   }
 
   &__item {
@@ -32,7 +39,7 @@
   }
 
   &__tab {
-    max-width: $break-x-mid;
+    max-width: $break-desktop;
     margin: auto;
   }
 
@@ -42,6 +49,7 @@
     align-items: center;
     padding: 0;
     margin: 0;
+    overflow: auto;
   }
 
   &__nav__item {
@@ -49,6 +57,7 @@
     font-size: $space-small;
     display: flex;
     align-items: center;
+    white-space: nowrap;
 
     img {
       margin-right: $space-x-small;
@@ -95,5 +104,136 @@
     font-size: $space-small;
     line-height: $space-medium;
     border-radius: pxToRem(2);
+  }
+
+  .simplebtn,
+  .btn_inverted,
+  .btn_primary,
+  &__nav__item {
+    position: relative;
+    cursor: pointer;
+    border-radius: pxToRem(2);
+
+    &:hover,
+    &:active {
+      &::before {
+        border-radius: pxToRem(2);
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: "";
+        width: 100%;
+        height: 100%;
+        background-color: $c-white-opacity;
+      }
+    }
+
+    &:focus {
+      box-shadow: 0 0 0 3px $c-lochmara-opacity;
+    }
+  }
+}
+
+.submenu {
+  background-color: $c-white;
+  position: absolute;
+  top: 40%;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+
+  &__close {
+    width: 100%;
+    text-align: right;
+    padding: $space-medium;
+    box-sizing: border-box;
+
+    img {
+      cursor: pointer;
+
+      &:focus {
+        box-shadow: 0 0 0 3px $c-lochmara-opacity;
+      }
+    }
+  }
+
+  &__title {
+    color: $c-mineShaft;
+    margin: 0;
+    padding: 0 $space-medium $space-medium;
+  }
+
+  &__subtitle {
+    color: $c-mineShaft;
+    margin: 0;
+    padding: $space-medium $space-medium pxToRem(12);
+    font-size: $space-small;
+  }
+
+  &__list {
+    color: $c-mineShaft;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__element {
+    padding: $space-standard $space-medium;
+    font-size: $space-small;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    &:hover,
+    &:active {
+      background-color: $c-opacity;
+    }
+
+    &:focus {
+      box-shadow: 0 0 0 3px $c-lochmara-opacity;
+    }
+
+    img {
+      margin-right: $space-standard;
+    }
+  }
+
+  &__custom {
+    margin-right: $space-standard;
+    opacity: 0.6;
+  }
+}
+
+.show {
+  display: block;
+  opacity: 1;
+  top: 0;
+}
+
+@media only screen and (max-width: $break-mobile) {
+  .header {
+    &__main {
+      img {
+        height: pxToRem(20);
+      }
+    }
+
+    &__group {
+      display: none;
+    }
+
+    &__mobile {
+      display: flex;
+    }
+
+    &__nav__item {
+      font-size: $space-small;
+
+      img {
+        width: pxToRem(20);
+        height: pxToRem(20);
+      }
+    }
   }
 }

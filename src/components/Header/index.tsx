@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 
+import Submenu from "./submenu";
 import {
   header,
   header__bar,
   header__main,
   header__group,
+  header__mobile,
   header__item,
   header__tab,
   header__nav,
@@ -23,8 +25,16 @@ import iconCar from "assets/car.svg";
 import iconRollercoster from "assets/rollercoster.svg";
 import iconTaxi from "assets/taxi.svg";
 import iconQuestion from "assets/question.svg";
+import iconLogin from "assets/login.svg";
+import iconHamburger from "assets/hamburger.svg";
 
 const Header = () => {
+  const [isShow, setIsShow] = useState(false);
+
+  const handleClick = () => {
+    setIsShow(!isShow);
+  };
+
   return (
     <div className={header}>
       <div className={header__bar}>
@@ -56,6 +66,19 @@ const Header = () => {
             <button className={btn_primary}>Zaloguj się</button>
           </div>
         </div>
+
+        <div className={header__mobile}>
+          <div className={header__item}>
+            <button className={simplebtn}>
+              <img className={img_circle} src={iconLogin} alt="login" />
+            </button>
+          </div>
+          <div className={header__item}>
+            <button className={simplebtn} onClick={handleClick}>
+              <img src={iconHamburger} alt="menu" />
+            </button>
+          </div>
+        </div>
       </div>
 
       <div className={header__tab}>
@@ -82,6 +105,8 @@ const Header = () => {
           </li>
         </ul>
       </div>
+
+      {isShow && <Submenu handleClick={handleClick} />}
     </div>
   );
 };
