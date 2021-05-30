@@ -1,21 +1,6 @@
 import React, { useState } from "react";
 
 import Submenu from "./submenu";
-import {
-  header,
-  header__bar,
-  header__main,
-  header__group,
-  header__mobile,
-  header__item,
-  header__tab,
-  header__nav,
-  header__nav__item,
-  simplebtn,
-  img_circle,
-  btn_inverted,
-  btn_primary,
-} from "./header.module.scss";
 
 import logo from "assets/booking_logo.svg";
 import iconPoland from "assets/poland.png";
@@ -30,76 +15,77 @@ import iconHamburger from "assets/hamburger.svg";
 
 const Header = () => {
   const [isShow, setIsShow] = useState(false);
+  const [activeNum, setActiveNum] = useState(1);
 
   const handleClick = () => {
     setIsShow(!isShow);
   };
 
   return (
-    <div className={header}>
-      <div className={header__bar}>
-        <div className={header__main}>
+    <div className="header">
+      <div className="header__bar">
+        <div className="header__main">
           <img src={logo} alt="Booking.com" />
         </div>
 
-        <div className={header__group}>
-          <div className={header__item}>
-            <button className={simplebtn}>PLN</button>
+        <div className="header__group">
+          <div className="header__item">
+            <button className="simplebtn">PLN</button>
           </div>
-          <div className={header__item}>
-            <button className={simplebtn}>
-              <img className={img_circle} src={iconPoland} alt="pl" />
+          <div className="header__item">
+            <button className="simplebtn">
+              <img className="img_circle" src={iconPoland} alt="pl" />
             </button>
           </div>
-          <div className={header__item}>
-            <button className={simplebtn}>
+          <div className="header__item">
+            <button className="simplebtn">
               <img src={iconQuestion} alt="?" />
             </button>
           </div>
-          <div className={header__item}>
-            <button className={btn_inverted}>Udostępnij obiekt</button>
+          <div className="header__item">
+            <button className="btn_inverted">Udostępnij obiekt</button>
           </div>
-          <div className={header__item}>
-            <button className={btn_primary}>Zarejestruj się</button>
+          <div className="header__item">
+            <button className="btn_primary">Zarejestruj się</button>
           </div>
-          <div className={header__item}>
-            <button className={btn_primary}>Zaloguj się</button>
+          <div className="header__item">
+            <button className="btn_primary">Zaloguj się</button>
           </div>
         </div>
 
-        <div className={header__mobile}>
-          <div className={header__item}>
-            <button className={simplebtn}>
-              <img className={img_circle} src={iconLogin} alt="login" />
+        <div className="header__mobile">
+          <div className="header__item">
+            <button className="simplebtn">
+              <img className="img_circle" src={iconLogin} alt="login" />
             </button>
           </div>
-          <div className={header__item}>
-            <button className={simplebtn} onClick={handleClick}>
+          <div className="header__item">
+            <button className="simplebtn" onClick={handleClick}>
               <img src={iconHamburger} alt="menu" />
             </button>
           </div>
         </div>
       </div>
 
-      <div className={header__tab}>
-        <ul className={header__nav}>
-          <li className={header__nav__item}>
+      <div className="header__tab">
+        <ul className="header__nav">
+          <li className={`header__nav__item ${activeNum === 1 && "active"}`}>
             <img src={iconBed} alt="icon"></img>
             <span>Pobyty</span>
           </li>
-          <li className={header__nav__item}>
+          <li className={`header__nav__item ${activeNum === 2 && "active"}`}>
             <img src={iconPlane} alt="icon"></img>
             <span>Loty</span>
           </li>
-          <li className={header__nav__item}>
+          <li className={`header__nav__item ${activeNum === 3 && "active"}`}>
             <img src={iconCar} alt="icon"></img>
             <span>Wynajem samochodów</span>
           </li>
-          <li className={header__nav__item}>
+          <li className={`header__nav__item ${activeNum === 4 && "active"}`}>
             <img src={iconRollercoster} alt="icon"></img>
             <span>Atrakcje</span>
           </li>
-          <li className={header__nav__item}>
+          <li className={`header__nav__item ${activeNum === 5 && "active"}`}>
             <img src={iconTaxi} alt="icon"></img>
             <span>Taksówki lotniskowe</span>
           </li>
