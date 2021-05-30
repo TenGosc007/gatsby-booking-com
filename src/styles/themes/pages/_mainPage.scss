@@ -1,0 +1,43 @@
+.input-area {
+  color: $c-mineShaft;
+  background-color: $c-wildSand;
+
+  &__container {
+    padding: $space-x-large $space-x-small;
+    max-width: $break-desktop;
+    margin: auto;
+    box-sizing: border-box;
+  }
+
+  &__header {
+    margin: 0;
+    font-size: $space-medium;
+    font-weight: 500;
+  }
+
+  &__sub-header {
+    font-size: $space-small;
+    line-height: pxToRem(20);
+    margin: 0 0 $space-medium;
+  }
+
+  &__area {
+    background-color: $c-selectiveYellow;
+    padding: pxToRem(4);
+    width: fit-content;
+    border-radius: pxToRem(4);
+    display: flex;
+    gap: pxToRem(4);
+    width: 100%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  }
+
+  &__check {
+    padding: $space-standard 0;
+
+    label {
+      padding-left: $space-x-small;
+      font-size: $space-small;
+    }
+  }
+}

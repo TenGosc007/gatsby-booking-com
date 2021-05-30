@@ -1,0 +1,14 @@
+.button {
+  background-color: $c-lochmara;
+  color: $c-white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: pxToRem(20);
+  padding: pxToRem(5) $space-large;
+
+  &:hover,
+  &:active {
+    background-color: $c-bahamaBlue;
+  }
+}
