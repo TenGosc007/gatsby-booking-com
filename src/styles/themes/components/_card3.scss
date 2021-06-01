@@ -1,0 +1,69 @@
+.card3 {
+  cursor: pointer;
+  color: $c-mineShaft;
+
+  &__img {
+    width: pxToRem(259);
+    height: pxToRem(240);
+    border-radius: pxToRem(4);
+    box-sizing: border-box;
+    background-size: cover;
+    background-position: center;
+  }
+
+  &__content {
+    padding: $space-x-small 0;
+
+    h3 {
+      padding: $space-standard 0 0;
+      font-size: $space-small;
+      margin: $space-x-small 0;
+      padding: 0;
+      line-height: pxToRem(24);
+    }
+  }
+
+  &__text {
+    font-size: $space-small;
+    margin: 0 $space-x-small;
+    line-height: pxToRem(20);
+    color: $c-mineShaft;
+  }
+
+  &__text-second {
+    font-size: $space-small;
+    margin: 0;
+    line-height: pxToRem(20);
+    color: $c-cloudy;
+  }
+
+  &__link {
+    font-size: $space-small;
+    margin: 0;
+    line-height: pxToRem(20);
+    color: $c-lochmara;
+  }
+
+  &:hover &__link {
+    color: $c-roseofSharon;
+  }
+
+  &__footer {
+    display: flex;
+    align-items: center;
+  }
+
+  &__score {
+    font-size: $space-small;
+    line-height: pxToRem(20);
+    color: $c-white;
+    background-color: $c-resolutionBlue;
+    height: pxToRem(28);
+    width: pxToRem(28);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: pxToRem(4);
+    border-bottom-left-radius: 0;
+  }
+}

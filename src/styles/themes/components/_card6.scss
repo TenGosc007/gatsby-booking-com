@@ -1,0 +1,61 @@
+.card6 {
+  height: 100%;
+  width: 100%;
+  max-width: pxToRem(207);
+  overflow: hidden;
+  cursor: pointer;
+  box-sizing: border-box;
+
+  &__img {
+    position: relative;
+    width: 100%;
+    height: pxToRem(135);
+    box-sizing: border-box;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.4s ease-in-out;
+  }
+
+  &__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    border-radius: pxToRem(4);
+    background: rgba(0, 0, 0, 0.2);
+  }
+
+  &__header {
+    align-items: center;
+    font-size: pxToRem(13);
+    text-overflow: ellipsis;
+    overflow: hidden;
+    line-height: pxToRem(30);
+    height: pxToRem(30);
+    font-weight: 400;
+    text-align: center;
+    padding: 0 pxToRem(15);
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  &:hover &__header {
+    height: 100%;
+    line-height: pxToRem(20);
+    display: flex;
+    align-items: center;
+  }
+
+  &__text {
+    text-align: center;
+    color: $c-lochmara;
+    font-size: $space-small;
+    padding: pxToRem(7);
+  }
+
+  &:hover &__text {
+    color: $c-roseofSharon;
+  }
+}

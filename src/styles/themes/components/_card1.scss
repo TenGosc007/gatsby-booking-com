@@ -1,0 +1,82 @@
+.card1 {
+  position: relative;
+  width: 100%;
+  max-width: pxToRem(540);
+  height: pxToRem(270);
+  border-radius: pxToRem(4);
+  overflow: hidden;
+  box-sizing: border-box;
+  border: 1px solid $c-white;
+  cursor: pointer;
+
+  &__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    border: 1px solid transparent;
+    border-radius: pxToRem(4);
+    background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.1) 50%,
+      rgba(21, 41, 68, 0.7) 98%
+    );
+
+    &:hover {
+      border: 1px solid $c-selectiveYellow;
+      background: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.1) 50%,
+        rgba(21, 41, 68, 0.9) 98%
+      );
+    }
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    font-size: pxToRem(28);
+    font-weight: 700;
+    text-shadow: $c-black 1px 1px 1px;
+    padding: pxToRem(21) pxToRem(15) 0;
+
+    img {
+      width: pxToRem(24);
+      height: pxToRem(20);
+      margin-left: $space-standard;
+    }
+  }
+
+  &__sub-header {
+    text-shadow: $c-black 1px 1px 1px;
+    padding: 0 pxToRem(15);
+    margin: pxToRem(5);
+  }
+
+  &__footer {
+    background: $c-masala;
+    width: max-content;
+    padding: pxToRem(6);
+    text-align: right;
+    border-radius: pxToRem(2);
+    align-self: flex-end;
+    justify-self: flex-end;
+    position: absolute;
+    bottom: 5%;
+    right: 2%;
+
+    h4 {
+      font-size: pxToRem(12);
+      line-height: pxToRem(15);
+      font-weight: 400;
+      margin: 0;
+    }
+
+    p {
+      padding-top: pxToRem(2);
+      margin: 0;
+    }
+  }
+}

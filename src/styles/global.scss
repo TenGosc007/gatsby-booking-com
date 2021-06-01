@@ -6,13 +6,13 @@ html {
   font-size: 16px;
   scroll-behavior: smooth;
   font-family: $f-baseFontFamily;
-  overflow-y: hidden;
 }
 
 body {
   font: normal normal normal 1rem $f-baseFontFamily;
   background-color: $c-white;
   color: $c-white;
+  overflow: auto;
 }
 
 img,

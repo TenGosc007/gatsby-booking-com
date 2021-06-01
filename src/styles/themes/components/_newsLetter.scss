@@ -1,0 +1,36 @@
+.news-letter {
+  background-color: $c-prussianBlue;
+  padding: pxToRem(50) 0;
+  text-align: center;
+
+  &__header {
+    font-weight: 300;
+    font-size: $space-medium;
+    line-height: $space-large;
+    margin: 0;
+  }
+
+  &__sub-header {
+    margin: 0;
+    line-height: $space-medium;
+    color: $c-cloudy;
+  }
+
+  &__input {
+    margin: pxToRem(20) auto pxToRem(10);
+    display: flex;
+    justify-content: center;
+    gap: $space-x-small;
+  }
+
+  &__check {
+    font-size: pxToRem(13);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    label {
+      margin-left: $space-x-small;
+    }
+  }
+}

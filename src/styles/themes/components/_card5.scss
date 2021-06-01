@@ -1,0 +1,77 @@
+.card5 {
+  width: 100%;
+  max-width: pxToRem(263);
+  overflow: hidden;
+  cursor: pointer;
+  box-sizing: border-box;
+
+  &__img {
+    position: relative;
+    width: 100%;
+    height: pxToRem(197);
+    border-radius: pxToRem(4);
+    box-sizing: border-box;
+    background-position: center;
+    background-size: contain;
+    transition: transform 0.4s ease-in-out;
+  }
+
+  &__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    box-sizing: border-box;
+    border-radius: pxToRem(4);
+    background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.8) 15%,
+      rgba(0, 0, 0, 0.15) 60%
+    );
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    font-size: pxToRem(16);
+    font-weight: 700;
+    text-shadow: $c-black 1px 1px 1px;
+    padding: pxToRem(21) pxToRem(15) 0;
+
+    img {
+      width: pxToRem(24);
+      height: pxToRem(20);
+      margin-left: $space-standard;
+    }
+  }
+
+  &__sub-header {
+    text-shadow: $c-black 1px 1px 1px;
+    padding: 0 pxToRem(15) pxToRem(15);
+    margin: pxToRem(5) 0;
+    font-size: $space-small;
+  }
+
+  &__text {
+    color: $c-lochmara;
+    margin: $space-small 0;
+    width: 100%;
+  }
+
+  &__link {
+    font-size: $space-small;
+    line-height: pxToRem(20);
+    text-decoration: underline;
+    padding: 0;
+    margin: 0;
+
+    &:hover {
+      color: $c-selectiveYellow;
+      text-decoration: none;
+    }
+  }
+}

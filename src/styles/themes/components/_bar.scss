@@ -1,0 +1,36 @@
+.bar {
+  background-color: $c-resolutionBlue;
+  text-align: center;
+
+  &__btn {
+    border: pxToRem(1) solid $c-white;
+    outline: none;
+    background-color: transparent;
+    color: $c-white;
+    padding: 0 pxToRem(15);
+    font-size: pxToRem(13);
+    line-height: pxToRem(26);
+    border-radius: pxToRem(3);
+    margin: $space-standard 0;
+  }
+
+  &__container {
+    border-top: 1px solid $c-white;
+  }
+
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: $break-desktop;
+    margin: auto;
+  }
+
+  &__text {
+    font-size: pxToRem(13);
+    text-decoration: underline;
+    font-weight: 700;
+    padding: $space-standard pxToRem(10);
+    margin: 0;
+    cursor: pointer;
+  }
+}

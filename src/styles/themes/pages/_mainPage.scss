@@ -1,6 +1,7 @@
 .input-area {
   color: $c-mineShaft;
   background-color: $c-wildSand;
+  margin-bottom: $space-large;
 
   &__container {
     padding: $space-x-large $space-x-small;
@@ -40,4 +41,14 @@
       font-size: $space-small;
     }
   }
+}
+
+.card1-area {
+  margin: auto;
+  max-width: $break-desktop;
+  display: flex;
+  gap: 16px;
+  justify-content: space-between;
+  padding: 6px pxToRem(24);
+  box-sizing: border-box;
 }
