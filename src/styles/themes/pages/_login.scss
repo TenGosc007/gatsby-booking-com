@@ -1,0 +1,113 @@
+.login {
+  color: $c-mineShaft;
+
+  &__container {
+    text-align: left;
+    margin: $space-x-large auto 0;
+    padding: $space-standard;
+    max-width: pxToRem(360);
+  }
+
+  &__header {
+    margin-bottom: $space-large;
+    font-size: $space-medium;
+    line-height: $space-large;
+    font-weight: 700;
+  }
+
+  &__form {
+    margin: $space-large auto $space-standard;
+
+    input {
+      display: block;
+      margin-bottom: $space-standard;
+      outline: none;
+      border: 1px solid $c-cloudy;
+      border-radius: pxToRem(2);
+      padding: $space-x-small;
+      width: 100%;
+      outline-color: $c-cloudy;
+      box-sizing: border-box;
+
+      &:active,
+      &:focus {
+        border: 1px solid $c-lochmara;
+        box-shadow: 0 0 0 3px rgba(0, 113, 194, 0.3);
+      }
+    }
+
+    button {
+      width: 100%;
+      height: $space-x-large;
+      transition: all 0.3s ease-in-out;
+      font-size: $space-standard;
+    }
+  }
+
+  &__text {
+    font-size: $space-small;
+    line-height: pxToRem(20);
+    color: $c-masala;
+  }
+
+  &__socialmedia {
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    padding: $space-standard;
+    border-top: 1px solid $c-opacity;
+    border-bottom: 1px solid $c-opacity;
+    margin: $space-medium 0 $space-standard;
+
+    img {
+      margin: $space-standard;
+      padding: pxToRem(23);
+      text-align: center;
+      border: 1px solid $c-opacity;
+      cursor: pointer;
+      transition: all 0.4s ease-in-out;
+
+      &:active,
+      &:focus,
+      &:hover {
+        background: $c-lochmara-opacity;
+        border: 1px solid $c-lochmara;
+      }
+
+      &:focus,
+      &:active {
+        box-shadow: 0 0 0 3px rgba(0, 113, 194, 0.3);
+      }
+    }
+  }
+
+  &__info {
+    font-size: pxToRem(12);
+    line-height: pxToRem(18);
+    text-align: center;
+    border-bottom: 1px solid $c-opacity;
+    padding-bottom: $space-standard;
+
+    span {
+      color: $c-lochmara;
+    }
+  }
+
+  &__footer {
+    font-size: pxToRem(12);
+    line-height: pxToRem(18);
+    text-align: center;
+    padding-top: $space-standard;
+
+    p {
+      margin: 0;
+    }
+  }
+}
+
+.title {
+  position: absolute;
+  top: -7%;
+  background: $c-white;
+  padding: 0 $space-x-small;
+}

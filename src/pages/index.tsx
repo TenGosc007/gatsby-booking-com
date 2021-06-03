@@ -60,6 +60,7 @@ const IndexPage = ({ data }: any) => {
     <Layout
       pageTitle="Booking.com | Oficjalna strona | Najlepsze hotele i nie tylko"
       nav={true}
+      number={1}
     >
       <Accordion
         title="Koronawirus (COVID-19) - wsparcie"
@@ -88,7 +89,7 @@ const IndexPage = ({ data }: any) => {
             <Input />
             <Input />
             <Input />
-            <Button />
+            <Button>Szukaj</Button>
           </div>
 
           <div className="input-area__check">

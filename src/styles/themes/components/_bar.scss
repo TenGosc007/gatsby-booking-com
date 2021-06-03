@@ -37,5 +37,16 @@
     padding: $space-standard pxToRem(10);
     margin: 0;
     cursor: pointer;
+
+    &--light {
+      font-size: $space-small;
+      line-height: pxToRem(28);
+      font-weight: 500;
+    }
   }
+}
+
+.center {
+  display: flex;
+  justify-content: center;
 }

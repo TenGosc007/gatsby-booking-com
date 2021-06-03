@@ -1,0 +1,59 @@
+.flights {
+  .input-area {
+    &__header {
+      font-size: $space-large;
+      font-weight: 700;
+      line-height: pxToRem(40);
+      margin-bottom: $space-small;
+    }
+
+    &__sub-header {
+      font-size: $space-standard;
+      line-height: $space-medium;
+    }
+
+    &__radio {
+      display: flex;
+      gap: $space-medium;
+      margin-bottom: $space-standard;
+    }
+
+    &__column {
+      font-size: $space-small;
+
+      label {
+        padding-left: pxToRem(4);
+      }
+    }
+  }
+
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    max-width: $break-standard;
+    margin: pxToRem(64) auto;
+    color: $c-mineShaft;
+  }
+
+  &__segment {
+    width: pxToRem(356);
+    display: flex;
+    align-items: flex-start;
+  }
+
+  &__text {
+    margin-left: $space-standard;
+
+    &--bold {
+      font-size: $space-standard;
+      line-height: $space-medium;
+      font-weight: 700;
+    }
+
+    &--normal {
+      font-size: $space-small;
+      line-height: pxToRem(20);
+      color: $c-masala;
+    }
+  }
+}

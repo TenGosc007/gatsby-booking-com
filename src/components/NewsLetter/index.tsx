@@ -13,7 +13,7 @@ const NewsLetter = () => {
 
       <div className="news-letter__input">
         <Input1 />
-        <Button />
+        <Button>Zaprenumeruj</Button>
       </div>
 
       <div className="news-letter__check">

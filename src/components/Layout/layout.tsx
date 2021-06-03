@@ -7,13 +7,14 @@ interface LayoutInterface {
   pageTitle?: string;
   children: React.ReactNode;
   nav?: boolean;
+  number: number;
 }
 
-const Layout = ({ pageTitle, children, nav }: LayoutInterface) => {
+const Layout = ({ pageTitle, children, nav, number }: LayoutInterface) => {
   return (
     <>
       <title>{pageTitle}</title>
-      <Header />
+      <Header number={number} />
       {children}
       <Footer nav={nav} />
     </>

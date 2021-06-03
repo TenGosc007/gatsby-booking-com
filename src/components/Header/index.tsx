@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "gatsby";
 
 import Submenu from "./submenu";
@@ -14,13 +14,21 @@ import iconQuestion from "assets/question.svg";
 import iconLogin from "assets/login.svg";
 import iconHamburger from "assets/hamburger.svg";
 
-const Header = () => {
+interface Props {
+  number: number;
+}
+
+const Header = ({ number }: Props) => {
   const [isShow, setIsShow] = useState(false);
   const [activeNum, setActiveNum] = useState(1);
 
   const handleClick = () => {
     setIsShow(!isShow);
   };
+
+  useEffect(() => {
+    setActiveNum(number);
+  }, [number]);
 
   return (
     <div className="header">
@@ -49,10 +57,14 @@ const Header = () => {
             <button className="btn_inverted">Udostępnij obiekt</button>
           </div>
           <div className="header__item">
-            <button className="btn_primary">Zarejestruj się</button>
+            <Link to="/login">
+              <button className="btn_primary">Zarejestruj się</button>
+            </Link>
           </div>
           <div className="header__item">
-            <button className="btn_primary">Zaloguj się</button>
+            <Link to="/login">
+              <button className="btn_primary">Zaloguj się</button>
+            </Link>
           </div>
         </div>
 
@@ -72,26 +84,36 @@ const Header = () => {
 
       <div className="header__tab">
         <ul className="header__nav">
-          <li className={`header__nav__item ${activeNum === 1 && "active"}`}>
-            <img src={iconBed} alt="icon"></img>
-            <span>Pobyty</span>
-          </li>
-          <li className={`header__nav__item ${activeNum === 2 && "active"}`}>
-            <img src={iconPlane} alt="icon"></img>
-            <span>Loty</span>
-          </li>
-          <li className={`header__nav__item ${activeNum === 3 && "active"}`}>
-            <img src={iconCar} alt="icon"></img>
-            <span>Wynajem samochodów</span>
-          </li>
-          <li className={`header__nav__item ${activeNum === 4 && "active"}`}>
-            <img src={iconRollercoster} alt="icon"></img>
-            <span>Atrakcje</span>
-          </li>
-          <li className={`header__nav__item ${activeNum === 5 && "active"}`}>
-            <img src={iconTaxi} alt="icon"></img>
-            <span>Taksówki lotniskowe</span>
-          </li>
+          <Link to="/">
+            <li className={`header__nav__item ${activeNum === 1 && "active"}`}>
+              <img src={iconBed} alt="icon"></img>
+              <span>Pobyty</span>
+            </li>
+          </Link>
+          <Link to="/flights">
+            <li className={`header__nav__item ${activeNum === 2 && "active"}`}>
+              <img src={iconPlane} alt="icon"></img>
+              <span>Loty</span>
+            </li>
+          </Link>
+          <Link to="/">
+            <li className={`header__nav__item ${activeNum === 3 && "active"}`}>
+              <img src={iconCar} alt="icon"></img>
+              <span>Wynajem samochodów</span>
+            </li>
+          </Link>
+          <Link to="/">
+            <li className={`header__nav__item ${activeNum === 4 && "active"}`}>
+              <img src={iconRollercoster} alt="icon"></img>
+              <span>Atrakcje</span>
+            </li>
+          </Link>
+          <Link to="/">
+            <li className={`header__nav__item ${activeNum === 5 && "active"}`}>
+              <img src={iconTaxi} alt="icon"></img>
+              <span>Taksówki lotniskowe</span>
+            </li>
+          </Link>
         </ul>
       </div>
 

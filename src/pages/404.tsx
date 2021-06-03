@@ -10,6 +10,7 @@ const NotFound = () => {
     <Layout
       pageTitle="Booking.com | Oficjalna strona | Najlepsze hotele i nie tylko"
       nav={true}
+      number={1}
     >
       <div className="not-found">
         <h2 className="not-found__header">Nie znaleziono strony</h2>
@@ -37,7 +38,7 @@ const NotFound = () => {
           </div>
 
           <div className="not-found__btn">
-            <Button />
+            <Button>Szukaj</Button>
           </div>
         </div>
 
