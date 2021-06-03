@@ -1,22 +1,25 @@
 import React from "react";
 
-const Card6 = () => {
+interface Props {
+  title: string;
+  imgUrl: string;
+  subtitle: string;
+}
+
+const Card6 = ({ title, imgUrl, subtitle }: Props) => {
   return (
     <div className="card6">
       <div
         className="card6__img"
         style={{
-          backgroundImage: `url("https://cf.bstatic.com/images/city/360x240/689/689587.jpg")`,
+          backgroundImage: `url("${imgUrl}")`,
         }}
       >
         <div className="card6__content">
-          <p className="card6__header">
-            Podczas wyjazdu do kraju Stany Zjednoczone Ameryki skorzystaj z
-            atrakcji takich, jak: relaks, restauracje i zakupy!
-          </p>
+          <p className="card6__header">{subtitle}</p>
         </div>
       </div>
-      <div className="card6__text">Stany Zjednoczone Ameryki</div>
+      <div className="card6__text">{title}</div>
     </div>
   );
 };

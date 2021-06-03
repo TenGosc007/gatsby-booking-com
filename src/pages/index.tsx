@@ -246,7 +246,68 @@ const IndexPage = ({ data }: any) => {
         </div>
       </div>
 
+      <div className="layout__container">
+        <h3 className="section-header">
+          Nawiąż kontakt z innymi podróżującymi
+        </h3>
+
+        <div className="card-area">
+          {data.allMarkdownRemark.edges
+            .filter((post: any) => post.node.frontmatter.type === "contact")
+            .map((post: any) => (
+              <Card2
+                key={post.node.id}
+                title={post.node.frontmatter.title}
+                imgUrl={post.node.frontmatter.imgUrl}
+                subtitle={post.node.frontmatter.rest}
+                rest={post.node.frontmatter.subtitle}
+                number={""}
+                big={true}
+              />
+            ))}
+        </div>
+      </div>
+
+      <div className="layout__container">
+        <Carousel
+          responsive={responsiveSmall}
+          swipeable={false}
+          draggable={false}
+          keyBoardControl={true}
+          containerClass="card-area"
+          customRightArrow={<CustomArrow type="right" />}
+          customLeftArrow={<CustomArrow type="left" />}
+        >
+          {data.allMarkdownRemark.edges
+            .filter((post: any) => post.node.frontmatter.type === "regions")
+            .map((post: any) => (
+              <Card5
+                key={post.node.id}
+                title={post.node.frontmatter.title}
+                imgUrl={post.node.frontmatter.imgUrl}
+                subtitle={post.node.frontmatter.subtitle}
+                extra={post.node.frontmatter.extra}
+              />
+            ))}
+        </Carousel>
+      </div>
+
       <Breadcrumb />
+
+      <div className="layout__container">
+        <div className="card-area">
+          {data.allMarkdownRemark.edges
+            .filter((post: any) => post.node.frontmatter.type === "more")
+            .map((post: any) => (
+              <Card6
+                key={post.node.id}
+                title={post.node.frontmatter.title}
+                imgUrl={post.node.frontmatter.imgUrl}
+                subtitle={post.node.frontmatter.subtitle}
+              />
+            ))}
+        </div>
+      </div>
 
       <NewsLetter />
       <Bar />
