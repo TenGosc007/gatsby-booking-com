@@ -6,4 +6,5 @@ title: "Domki wiejskie"
 subtitle: ""
 number: "137 240"
 rest: "domków wiejskich" 
+extra: ""
 ---

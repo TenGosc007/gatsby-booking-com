@@ -1,8 +1,10 @@
 .breadcrumb {
-  max-width: $break-desktop;
+  max-width: $break-standard;
   margin: auto auto $space-large;
   color: $c-lochmara;
   font-size: $space-small;
+  padding: 0 $space-x-small;
+  box-sizing: border-box;
 
   &--active {
     background-color: $c-lochmara;

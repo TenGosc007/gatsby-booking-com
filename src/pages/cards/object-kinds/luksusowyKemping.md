@@ -6,4 +6,5 @@ title: "Luksusowy kemping"
 subtitle: ""
 number: "10 085"
 rest: "luksusowych kempingów" 
+extra: ""
 ---

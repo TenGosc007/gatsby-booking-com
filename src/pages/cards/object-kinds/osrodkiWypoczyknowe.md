@@ -6,4 +6,5 @@ title: "Ośrodki wypoczynkowe"
 subtitle: ""
 number: "17 504"
 rest: "ośrodki wypoczynkowe" 
+extra: ""
 ---

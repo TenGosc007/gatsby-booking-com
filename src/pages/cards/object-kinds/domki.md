@@ -6,4 +6,5 @@ title: "Domki"
 subtitle: ""
 number: "30 017"
 rest: "domków" 
+extra: ""
 ---

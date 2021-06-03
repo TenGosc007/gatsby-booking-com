@@ -6,4 +6,5 @@ title: "Hotele"
 subtitle: ""
 number: "778 666"
 rest: "hoteli" 
+extra: ""
 ---

@@ -6,4 +6,5 @@ title: "Hotele apartamentowe "
 subtitle: ""
 number: "32 617"
 rest: "hoteli apartamentowych" 
+extra: ""
 ---

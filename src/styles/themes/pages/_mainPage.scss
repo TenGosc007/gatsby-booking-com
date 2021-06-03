@@ -1,9 +1,8 @@
 .layout {
   &__container {
     max-width: $break-standard;
-    margin: auto;
+    margin: auto auto pxToRem(50);
     box-sizing: border-box;
-    color: $c-mineShaft;
   }
 }
 
@@ -68,9 +67,23 @@
 }
 
 .section-header {
-  font-size: 24px;
+  font-size: $space-medium;
   font-weight: 700;
-  line-height: 32px;
-  padding: 0;
+  line-height: $space-large;
+  padding: 0 $space-x-small;
   margin: 0 0 $space-standard;
+  color: $c-mineShaft;
+
+  &--second {
+    font-size: pxToRem(20);
+    margin-bottom: 0;
+  }
+}
+
+.section-sub-header {
+  margin: pxToRem(2) 0 $space-standard;
+  padding: 0 $space-x-small;
+  font-size: $space-standard;
+  line-height: $space-medium;
+  color: $c-cloudy;
 }

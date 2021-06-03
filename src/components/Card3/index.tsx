@@ -1,23 +1,40 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
-const Card3 = () => {
+interface Props {
+  title: string;
+  number: string;
+  rest: string;
+  imgUrl: string;
+  subtitle: string;
+  extra: string;
+}
+
+const Card3 = ({ title, number, rest, imgUrl, subtitle, extra }: Props) => {
+  const [quality, setQuality] = useState("");
+
+  useEffect(() => {
+    parseInt(number.split(",").join("")) > 95
+      ? setQuality("Wyjątkowy")
+      : setQuality("Znakomity");
+  }, []);
+
   return (
     <div className="card3">
       <div
         className="card3__img"
         style={{
-          backgroundImage: `url("https://cf.bstatic.com/xdata/images/hotel/max500/103951224.jpg?k=03736dd4e1e89c1132e4957149e394d01ac6e8f64f4b09e30ade97a6176f0640&o=")`,
+          backgroundImage: `url("${imgUrl}")`,
         }}
       ></div>
       <div className="card3__content">
-        <p className="card3__link">Aparthotel Stare Miasto</p>
-        <p className="card3__text-second">Kraków</p>
+        <p className="card3__link">{title}</p>
+        <p className="card3__text-second">{extra}</p>
 
-        <h3>Ceny od 347 zł</h3>
+        <h3>{subtitle}</h3>
         <div className="card3__footer">
-          <div className="card3__score">9,0</div>
-          <p className="card3__text">Znakomity</p>
-          <p className="card3__text-second">3 432 opinii</p>
+          <div className="card3__score">{number}</div>
+          <p className="card3__text">{quality}</p>
+          <p className="card3__text-second">{rest}</p>
         </div>
       </div>
     </div>

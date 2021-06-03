@@ -37,6 +37,24 @@ const responsive = {
   },
 };
 
+const responsiveSmall = {
+  desktop: {
+    breakpoint: { max: 3000, min: 1024 },
+    items: 4,
+    slidesToSlide: 1, // optional, default to 1.
+  },
+  tablet: {
+    breakpoint: { max: 1024, min: 650 },
+    items: 2,
+    slidesToSlide: 1, // optional, default to 1.
+  },
+  mobile: {
+    breakpoint: { max: 650, min: 0 },
+    items: 1,
+    slidesToSlide: 1, // optional, default to 1.
+  },
+};
+
 const IndexPage = ({ data }: any) => {
   return (
     <Layout
@@ -91,17 +109,147 @@ const IndexPage = ({ data }: any) => {
           customRightArrow={<CustomArrow type="right" />}
           customLeftArrow={<CustomArrow type="left" />}
         >
-          {data.allMarkdownRemark.edges.map((post: any) => (
-            <Card2
-              key={post.node.id}
-              title={post.node.frontmatter.title}
-              number={post.node.frontmatter.number}
-              rest={post.node.frontmatter.rest}
-              imgUrl={post.node.frontmatter.imgUrl}
-            />
-          ))}
+          {data.allMarkdownRemark.edges
+            .filter((post: any) => post.node.frontmatter.type === "object-kind")
+            .map((post: any) => (
+              <Card2
+                key={post.node.id}
+                title={post.node.frontmatter.title}
+                number={post.node.frontmatter.number}
+                rest={post.node.frontmatter.rest}
+                imgUrl={post.node.frontmatter.imgUrl}
+              />
+            ))}
         </Carousel>
       </div>
+
+      <div className="layout__container">
+        <div className="card-area">
+          {data.allMarkdownRemark.edges
+            .filter((post: any) => post.node.frontmatter.type === "cites1")
+            .map((post: any) => (
+              <Card1
+                key={post.node.id}
+                title={post.node.frontmatter.title}
+                number={post.node.frontmatter.number}
+                rest={post.node.frontmatter.rest}
+                imgUrl={post.node.frontmatter.imgUrl}
+                subtitle={post.node.frontmatter.subtitle}
+              />
+            ))}
+        </div>
+        <div className="card-area">
+          {data.allMarkdownRemark.edges
+            .filter((post: any) => post.node.frontmatter.type === "cites")
+            .map((post: any) => (
+              <Card1
+                key={post.node.id}
+                title={post.node.frontmatter.title}
+                number={post.node.frontmatter.number}
+                rest={post.node.frontmatter.rest}
+                imgUrl={post.node.frontmatter.imgUrl}
+                subtitle={post.node.frontmatter.subtitle}
+              />
+            ))}
+        </div>
+      </div>
+
+      <div className="layout__container">
+        <h3 className="section-header section-header--second">
+          Polska – odkryj to miejsce
+        </h3>
+        <p className="section-sub-header">
+          Te popularne miejsca mają wiele do zaoferowania
+        </p>
+        <Carousel
+          responsive={responsive}
+          swipeable={false}
+          draggable={false}
+          keyBoardControl={true}
+          containerClass="card-area"
+          customRightArrow={<CustomArrow type="right" />}
+          customLeftArrow={<CustomArrow type="left" />}
+        >
+          {data.allMarkdownRemark.edges
+            .filter((post: any) => post.node.frontmatter.type === "discover")
+            .map((post: any) => (
+              <Card2
+                key={post.node.id}
+                title={post.node.frontmatter.title}
+                number={post.node.frontmatter.number}
+                rest={post.node.frontmatter.rest}
+                imgUrl={post.node.frontmatter.imgUrl}
+              />
+            ))}
+        </Carousel>
+      </div>
+
+      <div className="layout__container">
+        <h3 className="section-header">Domy, które goście kochają </h3>
+        <Carousel
+          responsive={responsiveSmall}
+          swipeable={false}
+          draggable={false}
+          keyBoardControl={true}
+          containerClass="card-area"
+          customRightArrow={<CustomArrow type="right" />}
+          customLeftArrow={<CustomArrow type="left" />}
+        >
+          {data.allMarkdownRemark.edges
+            .filter((post: any) => post.node.frontmatter.type === "houses")
+            .map((post: any) => (
+              <Card3
+                key={post.node.id}
+                title={post.node.frontmatter.title}
+                number={post.node.frontmatter.number}
+                rest={post.node.frontmatter.rest}
+                imgUrl={post.node.frontmatter.imgUrl}
+                extra={post.node.frontmatter.extra}
+                subtitle={post.node.frontmatter.subtitle}
+              />
+            ))}
+        </Carousel>
+      </div>
+
+      <div className="layout__container">
+        <h3 className="section-header">
+          Poszukaj inspiracji na kolejną podróż
+        </h3>
+
+        <div className="card-area">
+          {data.allMarkdownRemark.edges
+            .filter(
+              (post: any) => post.node.frontmatter.type === "inspirations"
+            )
+            .map((post: any) => (
+              <Card4
+                key={post.node.id}
+                title={post.node.frontmatter.title}
+                imgUrl={post.node.frontmatter.imgUrl}
+                subtitle={post.node.frontmatter.subtitle}
+              />
+            ))}
+        </div>
+        <div className="card-area">
+          {data.allMarkdownRemark.edges
+            .filter(
+              (post: any) => post.node.frontmatter.type === "inspirations1"
+            )
+            .map((post: any) => (
+              <Card4
+                key={post.node.id}
+                title={post.node.frontmatter.title}
+                imgUrl={post.node.frontmatter.imgUrl}
+                subtitle={post.node.frontmatter.subtitle}
+              />
+            ))}
+        </div>
+      </div>
+
+      <Breadcrumb />
+
+      <NewsLetter />
+      <Bar />
     </Layout>
   );
 };
@@ -120,6 +268,7 @@ export const query = graphql`
             subtitle
             number
             rest
+            extra
           }
         }
       }

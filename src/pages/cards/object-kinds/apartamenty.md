@@ -6,4 +6,5 @@ title: "Apartamenty"
 subtitle: ""
 number: "755 991"
 rest: "apartamentów" 
+extra: ""
 ---

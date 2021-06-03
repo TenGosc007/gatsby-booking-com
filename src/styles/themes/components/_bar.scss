@@ -12,6 +12,11 @@
     line-height: pxToRem(26);
     border-radius: pxToRem(3);
     margin: $space-standard 0;
+    cursor: pointer;
+
+    &:hover {
+      background: $c-white-opacity;
+    }
   }
 
   &__container {
@@ -21,7 +26,7 @@
   &__content {
     display: flex;
     flex-wrap: wrap;
-    max-width: $break-desktop;
+    max-width: $break-standard;
     margin: auto;
   }
 
