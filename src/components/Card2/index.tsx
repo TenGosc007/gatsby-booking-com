@@ -1,19 +1,37 @@
 import React from "react";
 
-const Card2 = ({ big = false }) => {
+interface Props {
+  big?: boolean;
+  title: string;
+  number: string;
+  rest: string;
+  imgUrl: string;
+  subtitle?: string;
+}
+
+const Card2 = ({
+  title,
+  number,
+  rest,
+  imgUrl,
+  subtitle = "",
+  big = false,
+}: Props) => {
   return (
     <div className="card2">
       <div
         className={`card2__img ${big && "card2__img--big"}`}
         style={{
-          backgroundImage: `url("https://cf.bstatic.com/xdata/images/xphoto/square300/57584488.webp?k=bf724e4e9b9b75480bbe7fc675460a089ba6414fe4693b83ea3fdd8e938832a6&o=")`,
+          backgroundImage: `url("${imgUrl}")`,
         }}
       ></div>
 
       <div className="card2__content">
-        <h3>Hotele</h3>
-        <p>778 666 hoteli</p>
-        <p>test</p>
+        <h3>{title}</h3>
+        <p>
+          {number} {rest}
+        </p>
+        <p>{subtitle}</p>
       </div>
     </div>
   );

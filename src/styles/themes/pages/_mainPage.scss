@@ -1,11 +1,20 @@
+.layout {
+  &__container {
+    max-width: $break-standard;
+    margin: auto;
+    box-sizing: border-box;
+    color: $c-mineShaft;
+  }
+}
+
 .input-area {
   color: $c-mineShaft;
   background-color: $c-wildSand;
   margin-bottom: $space-large;
 
   &__container {
-    padding: $space-x-large $space-x-small;
-    max-width: $break-desktop;
+    padding: $space-x-large 0;
+    max-width: $break-standard;
     margin: auto;
     box-sizing: border-box;
   }
@@ -13,7 +22,7 @@
   &__header {
     margin: 0;
     font-size: $space-medium;
-    font-weight: 500;
+    font-weight: 600;
   }
 
   &__sub-header {
@@ -39,16 +48,29 @@
     label {
       padding-left: $space-x-small;
       font-size: $space-small;
+      cursor: pointer;
+    }
+
+    input {
+      cursor: pointer;
     }
   }
 }
 
-.card1-area {
+.card-area {
   margin: auto;
-  max-width: $break-desktop;
+  max-width: $break-standard;
   display: flex;
-  gap: 16px;
+  gap: $space-standard;
   justify-content: space-between;
-  padding: 6px pxToRem(24);
+  padding: pxToRem(6) pxToRem(8);
   box-sizing: border-box;
+}
+
+.section-header {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  padding: 0;
+  margin: 0 0 $space-standard;
 }

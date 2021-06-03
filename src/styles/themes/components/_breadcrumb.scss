@@ -1,0 +1,54 @@
+.breadcrumb {
+  max-width: $break-desktop;
+  margin: auto auto $space-large;
+  color: $c-lochmara;
+  font-size: $space-small;
+
+  &--active {
+    background-color: $c-lochmara;
+    color: $c-white;
+    cursor: default !important;
+  }
+
+  &__nav {
+    color: $c-masala;
+
+    ul {
+      list-style-type: none;
+      padding: pxToRem(12) 0 0;
+      margin: 0;
+      border-bottom: 1px solid $c-lochmara;
+      display: flex;
+
+      li {
+        font-size: pxToRem(13);
+        line-height: pxToRem(30);
+        padding: 0 pxToRem(15);
+        cursor: pointer;
+      }
+    }
+  }
+
+  &__content {
+    ul {
+      padding: 0 0 pxToRem(17);
+      margin: pxToRem(3) 0;
+      list-style-type: none;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      line-height: pxToRem(20);
+
+      li {
+        margin-top: pxToRem(10);
+        padding-right: $space-medium;
+        width: 200px;
+
+        span {
+          color: $c-masala;
+          display: block;
+        }
+      }
+    }
+  }
+}

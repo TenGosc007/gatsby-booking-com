@@ -1,9 +1,9 @@
 .card2 {
   cursor: pointer;
   color: $c-mineShaft;
+  width: pxToRem(207);
 
   &__img {
-    width: pxToRem(207);
     height: pxToRem(180);
     border-radius: pxToRem(4);
     box-sizing: border-box;

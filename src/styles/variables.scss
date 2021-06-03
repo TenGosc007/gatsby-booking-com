@@ -20,13 +20,15 @@ $c-masala: #494949;
 
 // Fonts
 //==========================================================================
-$f-baseFontFamily: "Roboto", sans-serif;
+$f-baseFontFamily: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto,
+  Helvetica, Arial, sans-serif;
 
 // Breaks
 //==========================================================================
 $break-xs: 374px;
 $break-mobile: 767px;
 $break-mid: 991px;
+$break-standard: 1100px;
 $break-desktop: 1144px;
 $break-laptop: 1299px;
 $break-high: 1600px;

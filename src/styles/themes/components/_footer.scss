@@ -1,0 +1,61 @@
+.footer {
+  background-color: $c-wildSand;
+  color: $c-masala;
+
+  &__container {
+    max-width: $break-desktop;
+    margin: auto;
+    padding: $space-standard $space-x-small;
+    box-sizing: border-box;
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__list {
+    list-style: none;
+    color: $c-lochmara;
+    font-size: pxToRem(13);
+    margin: 0;
+    padding: 0;
+    max-width: pxToRem(220);
+
+    li {
+      cursor: pointer;
+      margin-bottom: pxToRem(10);
+    }
+
+    li:hover {
+      color: $c-roseofSharon;
+    }
+  }
+
+  &__link {
+    font-size: $space-small;
+    text-align: center;
+    font-weight: 700;
+    padding: $space-small;
+  }
+
+  &__copyright {
+    margin: $space-standard;
+    font-size: $space-small;
+    text-align: center;
+  }
+
+  &__text {
+    margin: $space-standard;
+    font-size: pxToRem(12);
+    text-align: center;
+    color: $c-cloudy;
+  }
+
+  &__partners {
+    margin: $space-medium auto;
+    max-width: $break-desktop;
+    display: flex;
+    justify-content: space-around;
+  }
+}

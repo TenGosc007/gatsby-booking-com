@@ -3,7 +3,13 @@ import React, { useState } from "react";
 import iconInfo from "assets/infoWarning.svg";
 import iconArrowUp from "assets/arrowUp.svg";
 
-const Accordion = () => {
+interface Props {
+  children: JSX.Element;
+  title: string | JSX.Element;
+  link: { to: string; text: string };
+}
+
+const Accordion = ({ title, link, children }: Props) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const handleClick = () => {
@@ -16,7 +22,7 @@ const Accordion = () => {
         <img className="accordion__img" src={iconInfo} alt="i" />
         <div className="accordion__content">
           <div className="accordion__header" onClick={handleClick}>
-            <span>Koronawirus (COVID-19) - wsparcie</span>
+            <span>{title}</span>
             <img
               className={`${isOpen && "rotate"}`}
               src={iconArrowUp}
@@ -25,14 +31,10 @@ const Accordion = () => {
           </div>
           {isOpen && (
             <>
-              <p className="accordion__text">
-                Sprawdź ograniczenia dotyczące podróżowania. Podróżowanie może
-                być dozwolone tylko w określonych celach, a podróżowanie
-                zwłaszcza w celach turystycznych może nie być dozwolone.
-              </p>
+              <p className="accordion__text">{children}</p>
 
-              <a className="accordion__link" href="/">
-                Dowiedz się więcej
+              <a className="accordion__link" href={link.to} target="_blank">
+                {link.text}
               </a>
             </>
           )}
