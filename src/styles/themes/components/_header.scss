@@ -216,6 +216,9 @@
 
 @media only screen and (max-width: $break-mobile) {
   .header {
+    position: relative;
+    z-index: 100;
+
     &__main {
       img {
         height: pxToRem(20);

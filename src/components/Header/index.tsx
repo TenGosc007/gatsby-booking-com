@@ -82,40 +82,52 @@ const Header = ({ number }: Props) => {
         </div>
       </div>
 
-      <div className="header__tab">
-        <ul className="header__nav">
-          <Link to="/">
-            <li className={`header__nav__item ${activeNum === 1 && "active"}`}>
-              <img src={iconBed} alt="icon"></img>
-              <span>Pobyty</span>
-            </li>
-          </Link>
-          <Link to="/flights">
-            <li className={`header__nav__item ${activeNum === 2 && "active"}`}>
-              <img src={iconPlane} alt="icon"></img>
-              <span>Loty</span>
-            </li>
-          </Link>
-          <Link to="/">
-            <li className={`header__nav__item ${activeNum === 3 && "active"}`}>
-              <img src={iconCar} alt="icon"></img>
-              <span>Wynajem samochodów</span>
-            </li>
-          </Link>
-          <Link to="/">
-            <li className={`header__nav__item ${activeNum === 4 && "active"}`}>
-              <img src={iconRollercoster} alt="icon"></img>
-              <span>Atrakcje</span>
-            </li>
-          </Link>
-          <Link to="/">
-            <li className={`header__nav__item ${activeNum === 5 && "active"}`}>
-              <img src={iconTaxi} alt="icon"></img>
-              <span>Taksówki lotniskowe</span>
-            </li>
-          </Link>
-        </ul>
-      </div>
+      {!!activeNum && (
+        <div className="header__tab">
+          <ul className="header__nav">
+            <Link to="/">
+              <li
+                className={`header__nav__item ${activeNum === 1 && "active"}`}
+              >
+                <img src={iconBed} alt="icon"></img>
+                <span>Pobyty</span>
+              </li>
+            </Link>
+            <Link to="/flights">
+              <li
+                className={`header__nav__item ${activeNum === 2 && "active"}`}
+              >
+                <img src={iconPlane} alt="icon"></img>
+                <span>Loty</span>
+              </li>
+            </Link>
+            <Link to="/">
+              <li
+                className={`header__nav__item ${activeNum === 3 && "active"}`}
+              >
+                <img src={iconCar} alt="icon"></img>
+                <span>Wynajem samochodów</span>
+              </li>
+            </Link>
+            <Link to="/">
+              <li
+                className={`header__nav__item ${activeNum === 4 && "active"}`}
+              >
+                <img src={iconRollercoster} alt="icon"></img>
+                <span>Atrakcje</span>
+              </li>
+            </Link>
+            <Link to="/">
+              <li
+                className={`header__nav__item ${activeNum === 5 && "active"}`}
+              >
+                <img src={iconTaxi} alt="icon"></img>
+                <span>Taksówki lotniskowe</span>
+              </li>
+            </Link>
+          </ul>
+        </div>
+      )}
 
       {isShow && <Submenu handleClick={handleClick} />}
     </div>

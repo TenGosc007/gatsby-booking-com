@@ -1,5 +1,5 @@
 import React from "react";
-import { graphql } from "gatsby";
+import { Link, graphql } from "gatsby";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
@@ -15,7 +15,6 @@ import Card5 from "components/Card5";
 import Card6 from "components/Card6";
 import NewsLetter from "components/NewsLetter";
 import Bar from "components/Bar";
-import Footer from "components/Footer";
 import Breadcrumb from "components/Breadcrumb";
 import CustomArrow from "components/CustomArrow";
 
@@ -223,12 +222,13 @@ const IndexPage = ({ data }: any) => {
               (post: any) => post.node.frontmatter.type === "inspirations"
             )
             .map((post: any) => (
-              <Card4
-                key={post.node.id}
-                title={post.node.frontmatter.title}
-                imgUrl={post.node.frontmatter.imgUrl}
-                subtitle={post.node.frontmatter.subtitle}
-              />
+              <Link to={post.node.frontmatter.path} key={post.node.id}>
+                <Card4
+                  title={post.node.frontmatter.title}
+                  imgUrl={post.node.frontmatter.imgUrl}
+                  subtitle={post.node.frontmatter.subtitle}
+                />
+              </Link>
             ))}
         </div>
         <div className="card-area">
@@ -237,12 +237,13 @@ const IndexPage = ({ data }: any) => {
               (post: any) => post.node.frontmatter.type === "inspirations1"
             )
             .map((post: any) => (
-              <Card4
-                key={post.node.id}
-                title={post.node.frontmatter.title}
-                imgUrl={post.node.frontmatter.imgUrl}
-                subtitle={post.node.frontmatter.subtitle}
-              />
+              <Link to={post.node.frontmatter.path} key={post.node.id}>
+                <Card4
+                  title={post.node.frontmatter.title}
+                  imgUrl={post.node.frontmatter.imgUrl}
+                  subtitle={post.node.frontmatter.subtitle}
+                />
+              </Link>
             ))}
         </div>
       </div>

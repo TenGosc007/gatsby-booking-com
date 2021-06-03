@@ -64,6 +64,10 @@
   justify-content: space-between;
   padding: pxToRem(6) pxToRem(8);
   box-sizing: border-box;
+
+  a {
+    width: 100%;
+  }
 }
 
 .section-header {

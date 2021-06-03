@@ -1,0 +1,38 @@
+.blog-post {
+  color: $c-mineShaft;
+
+  &__img {
+    width: 100%;
+    height: pxToRem(380);
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+  }
+
+  &__container {
+    max-width: $break-mobile;
+    margin: auto;
+    padding: $space-large;
+
+    img {
+      max-width: $break-mobile;
+    }
+  }
+
+  &__path {
+    font-size: pxToRem(12);
+    cursor: pointer;
+
+    span {
+      color: $c-lochmara;
+
+      &:hover {
+        color: $c-roseofSharon;
+      }
+    }
+  }
+
+  &__header {
+    font-size: $space-x-large;
+  }
+}
