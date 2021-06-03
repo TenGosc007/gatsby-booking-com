@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "gatsby";
 
 import Submenu from "./submenu";
 
@@ -25,7 +26,9 @@ const Header = () => {
     <div className="header">
       <div className="header__bar">
         <div className="header__main">
-          <img src={logo} alt="Booking.com" />
+          <Link to="/">
+            <img src={logo} alt="Booking.com" />
+          </Link>
         </div>
 
         <div className="header__group">

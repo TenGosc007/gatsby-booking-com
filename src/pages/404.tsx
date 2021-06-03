@@ -1,54 +1,59 @@
-import * as React from "react"
-import { Link } from "gatsby"
+import React from "react";
 
-// styles
-const pageStyles = {
-  color: "#232129",
-  padding: "96px",
-  fontFamily: "-apple-system, Roboto, sans-serif, serif",
-}
-const headingStyles = {
-  marginTop: 0,
-  marginBottom: 64,
-  maxWidth: 320,
-}
+import Layout from "components/Layout/layout";
+import NewsLetter from "components/NewsLetter";
+import Bar from "components/Bar";
+import Button from "components/Button";
 
-const paragraphStyles = {
-  marginBottom: 48,
-}
-const codeStyles = {
-  color: "#8A6534",
-  padding: 4,
-  backgroundColor: "#FFF4DB",
-  fontSize: "1.25rem",
-  borderRadius: 4,
-}
-
-// markup
-const NotFoundPage = () => {
+const NotFound = () => {
   return (
-    <main style={pageStyles}>
-      <title>Not found</title>
-      <h1 style={headingStyles}>Page not found</h1>
-      <p style={paragraphStyles}>
-        Sorry{" "}
-        <span role="img" aria-label="Pensive emoji">
-          😔
-        </span>{" "}
-        we couldn’t find what you were looking for.
-        <br />
-        {process.env.NODE_ENV === "development" ? (
-          <>
-            <br />
-            Try creating a page in <code style={codeStyles}>src/pages/</code>.
-            <br />
-          </>
-        ) : null}
-        <br />
-        <Link to="/">Go home</Link>.
-      </p>
-    </main>
-  )
-}
+    <Layout
+      pageTitle="Booking.com | Oficjalna strona | Najlepsze hotele i nie tylko"
+      nav={true}
+    >
+      <div className="not-found">
+        <h2 className="not-found__header">Nie znaleziono strony</h2>
+        <p className="not-found__sub-header">
+          Zdarza się! Teraz spróbujmy to naprawić.
+        </p>
 
-export default NotFoundPage
+        <div className="not-found__form">
+          <label htmlFor="name">Miejsce, nazwa obiektu lub adres: </label>
+          <input
+            type="text"
+            id="name"
+            placeholder="np. miasto, region, dzielnica lub konkretny hotel"
+          />
+
+          <div className="not-found__date">
+            <div className="not-found__column">
+              <label htmlFor="from">Od</label>
+              <input type="date" id="from" />
+            </div>
+            <div className="not-found__column">
+              <label htmlFor="to">Do</label>
+              <input type="date" id="to" />
+            </div>
+          </div>
+
+          <div className="not-found__btn">
+            <Button />
+          </div>
+        </div>
+
+        <div className="not-found__footer">
+          <h3>Inne opcje</h3>
+
+          <p className="not-found__link">Przejdź do strony głównej</p>
+          <p className="not-found__link">Lista miejsc</p>
+          <p className="not-found__link">Zgłoś błąd</p>
+        </div>
+      </div>
+
+      <NewsLetter />
+      <Bar />
+    </Layout>
+  );
+};
+
+export default NotFound;
