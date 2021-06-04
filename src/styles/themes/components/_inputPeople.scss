@@ -1,4 +1,4 @@
-.input {
+.input-people {
   position: relative;
   background-color: $c-white;
   color: $c-mineShaft;
@@ -6,30 +6,33 @@
   align-items: center;
   border-radius: pxToRem(2);
   flex: 1;
+  max-width: max-content;
+  cursor: pointer;
 
   img {
-    filter: brightness(0.5);
     padding: $space-small;
-    opacity: 0.6;
   }
 
-  input {
-    border: none;
-    outline: none;
+  &__content {
+    display: flex;
+    align-items: center;
     font-size: $space-small;
-    height: pxToRem(50);
-    box-sizing: border-box;
+    line-height: pxToRem(20);
+  }
+
+  &__count {
+    padding: $space-x-small;
+  }
+
+  &__separator {
+    background-color: $c-masala;
+    width: pxToRem(2);
+    height: pxToRem(2);
   }
 
   &:hover,
   &:active,
   &:focus {
     box-shadow: 0 0 0 1px #d59c00;
-  }
-
-  &__clear {
-    position: absolute;
-    right: 0;
-    cursor: pointer;
   }
 }

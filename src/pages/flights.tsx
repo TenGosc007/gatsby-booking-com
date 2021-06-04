@@ -3,6 +3,8 @@ import { Link } from "gatsby";
 
 import Layout from "components/Layout/layout";
 import Input from "components/Input";
+import InputDate from "components/InputDate";
+import InputDouble from "components/InputDouble";
 import Button from "components/Button";
 import Accordion from "components/Accordion";
 import BarSimple from "components/BarSimple";
@@ -65,9 +67,8 @@ const Flights = () => {
             </div>
 
             <div className="input-area__area">
-              <Input />
-              <Input />
-              <Input />
+              <InputDouble />
+              <InputDate />
               <Button>Szukaj</Button>
             </div>
 

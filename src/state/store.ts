@@ -1,10 +1,14 @@
 import { configureStore, ThunkAction, Action } from "@reduxjs/toolkit";
 
-import counter from "./counter";
+import accordion from "./accordion";
+import header from "./header";
+import input from "./input";
 
 const store = configureStore({
   reducer: {
-    counter,
+    accordion,
+    header,
+    input,
   },
 });
 

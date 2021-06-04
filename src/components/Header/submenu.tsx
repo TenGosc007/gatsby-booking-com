@@ -1,4 +1,6 @@
 import React from "react";
+import { useDispatch } from "react-redux";
+import { toggle } from "state/header";
 
 import iconPoland from "assets/poland.png";
 import iconClose from "assets/close.svg";
@@ -17,15 +19,13 @@ import iconPartner from "assets/partner.svg";
 import iconPercents from "assets/percents.svg";
 import iconRules from "assets/rules.svg";
 
-interface SummenuInterface {
-  handleClick: () => void;
-}
+const Submenu = () => {
+  const dispatch = useDispatch();
 
-const Submenu = ({ handleClick }: SummenuInterface) => {
   return (
     <div className="submenu show">
       <div className="submenu__close">
-        <img src={iconClose} alt="X" onClick={handleClick} />
+        <img src={iconClose} alt="X" onClick={() => dispatch(toggle())} />
       </div>
 
       <h2 className="submenu__title">Więcej</h2>

@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "gatsby";
+import { useDispatch, useSelector } from "react-redux";
 
+import { toggle, setNum, selectIsShow, selectActiveNum } from "state/header";
 import Submenu from "./submenu";
 
 import logo from "assets/booking_logo.svg";
@@ -19,15 +21,12 @@ interface Props {
 }
 
 const Header = ({ number }: Props) => {
-  const [isShow, setIsShow] = useState(false);
-  const [activeNum, setActiveNum] = useState(1);
-
-  const handleClick = () => {
-    setIsShow(!isShow);
-  };
+  const isShow = useSelector(selectIsShow);
+  const activeNum = useSelector(selectActiveNum);
+  const dispatch = useDispatch();
 
   useEffect(() => {
-    setActiveNum(number);
+    dispatch(setNum(number));
   }, [number]);
 
   return (
@@ -75,7 +74,7 @@ const Header = ({ number }: Props) => {
             </button>
           </div>
           <div className="header__item">
-            <button className="simplebtn" onClick={handleClick}>
+            <button className="simplebtn" onClick={() => dispatch(toggle())}>
               <img src={iconHamburger} alt="menu" />
             </button>
           </div>
@@ -129,7 +128,7 @@ const Header = ({ number }: Props) => {
         </div>
       )}
 
-      {isShow && <Submenu handleClick={handleClick} />}
+      {isShow && <Submenu />}
     </div>
   );
 };

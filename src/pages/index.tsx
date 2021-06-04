@@ -5,6 +5,8 @@ import "react-multi-carousel/lib/styles.css";
 
 import Layout from "components/Layout/layout";
 import Input from "components/Input";
+import InputDate from "components/InputDate";
+import InputPeople from "components/InputPeople";
 import Button from "components/Button";
 import Accordion from "components/Accordion";
 import Card1 from "components/Card1";
@@ -86,8 +88,8 @@ const IndexPage = ({ data }: any) => {
 
           <div className="input-area__area">
             <Input />
-            <Input />
-            <Input />
+            <InputDate />
+            <InputPeople />
             <Button>Szukaj</Button>
           </div>
 
