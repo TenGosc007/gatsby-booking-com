@@ -1,0 +1,130 @@
+.result-card {
+  border: 1px solid $c-cloudy;
+  margin: $space-standard 0;
+  padding: $space-standard;
+  border-radius: pxToRem(3);
+  display: flex;
+  width: 100%;
+  box-sizing: border-box;
+
+  &__bg-img {
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center !important;
+    width: pxToRem(200);
+    height: pxToRem(200);
+  }
+
+  &__img {
+    position: relative;
+    min-width: pxToRem(200);
+    height: pxToRem(200);
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+
+  &__favourite {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: $space-x-small;
+    cursor: pointer;
+    transition: 0.3s ease;
+
+    img {
+      width: $space-medium;
+
+      &:hover,
+      &:active {
+        filter: invert(100%);
+      }
+    }
+  }
+
+  &__container {
+    padding-left: $space-standard;
+    font-size: pxToRem(12);
+    line-height: pxToRem(18);
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+
+    h3 {
+      margin: 0;
+      font-size: pxToRem(20);
+      line-height: pxToRem(28);
+      color: $c-lochmara;
+    }
+  }
+
+  &__link {
+    color: $c-lochmara;
+    text-decoration: underline;
+    cursor: pointer;
+    padding: 0 $space-x-small 0 0;
+  }
+
+  &__flex {
+    display: flex;
+    gap: $space-x-small;
+  }
+
+  &__rating {
+    display: flex;
+    align-items: flex-start;
+    text-align: right;
+
+    h4 {
+      margin: 0;
+      font-size: $space-standard;
+      line-height: $space-medium;
+      font-weight: 500;
+      margin-right: $space-x-small;
+    }
+
+    p {
+      margin: 0;
+      margin-right: $space-x-small;
+    }
+  }
+
+  &__score {
+    font-size: $space-standard;
+    line-height: $space-medium;
+    color: $c-white;
+    background-color: $c-resolutionBlue;
+    height: $space-large;
+    width: $space-large;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: pxToRem(4);
+    border-bottom-left-radius: pxToRem(4);
+    border-bottom-left-radius: 0;
+    margin-top: pxToRem(6);
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    p {
+      padding-right: $space-medium;
+    }
+
+    button {
+      font-size: $space-small;
+      padding: $space-x-small $space-standard;
+      min-width: pxToRem(100);
+      flex: 1;
+      margin-top: pxToRem(12);
+    }
+  }
+
+  &__footer {
+    color: $c-red;
+  }
+}

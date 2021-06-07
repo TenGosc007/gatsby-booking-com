@@ -1,0 +1,39 @@
+.path {
+  color: $c-mineShaft;
+  font-size: pxToRem(12);
+  line-height: pxToRem(18);
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: $space-x-small;
+
+  &__text {
+    color: $c-lochmara;
+    margin: $space-x-small $space-x-small 0;
+    cursor: pointer;
+
+    &:hover,
+    &:active {
+      text-decoration: underline;
+    }
+  }
+
+  &__text:last-child {
+    color: $c-masala;
+    cursor: default;
+
+    &:hover,
+    &:active {
+      text-decoration: none;
+    }
+  }
+
+  &__separator {
+    margin-top: $space-x-small;
+    font-size: pxToRem(10);
+    line-height: pxToRem(18);
+  }
+
+  &__flex {
+    display: flex;
+  }
+}

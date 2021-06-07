@@ -1,0 +1,127 @@
+.results {
+  max-width: $break-standard;
+  margin: auto;
+  color: $c-mineShaft;
+
+  &__container {
+    display: flex;
+    gap: $space-medium;
+  }
+
+  &__sidebar {
+    max-width: pxToRem(264);
+  }
+
+  &__side-filters {
+    padding: pxToRem(5);
+    margin-top: $space-x-small;
+    font-size: pxToRem(13);
+    line-height: pxToRem(20);
+    border-radius: pxToRem(3);
+    border: 1px solid $c-cloudy;
+
+    h4 {
+      font-size: $space-small;
+      line-height: pxToRem(20);
+      margin: pxToRem(10) 0 0;
+      padding: pxToRem(4) 0;
+    }
+
+    div {
+      display: flex;
+      padding: pxToRem(5);
+
+      label {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding-left: $space-x-small;
+
+        span {
+          color: $c-cloudy;
+        }
+      }
+    }
+  }
+
+  &__content {
+    width: 100%;
+    max-width: pxToRem(812);
+  }
+
+  &__header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__heaedr {
+    display: block;
+    font-size: $space-medium;
+    line-height: pxToRem(28);
+    margin: 0;
+    font-weight: 700;
+    width: auto;
+  }
+
+  &__map {
+    background-image: url("assets/map.png");
+    position: relative;
+    width: pxToRem(160);
+    height: pxToRem(72);
+    box-sizing: border-box;
+    border-radius: pxToRem(2);
+
+    button {
+      position: absolute;
+      font-size: $space-small;
+      line-height: pxToRem(20);
+      font-weight: 500;
+      margin: pxToRem(21) $space-standard;
+      padding: $space-x-small $space-standard;
+    }
+  }
+
+  &__filter {
+    display: flex;
+    margin-top: $space-x-small;
+
+    button {
+      font-size: $space-small;
+      line-height: pxToRem(20);
+      background: $c-white;
+      color: $c-lochmara;
+      padding: pxToRem(7) pxToRem(12);
+      border: 1px solid $c-lochmara;
+      outline: none;
+      box-sizing: border-box;
+      cursor: pointer;
+      flex: 1;
+      min-width: max-content;
+
+      &:hover,
+      &:active {
+        background: $c-lochmara-opacity;
+      }
+    }
+
+    .acitve {
+      background: $c-lochmara;
+      color: $c-white;
+
+      &:hover,
+      &:active {
+        background: $c-lochmara;
+      }
+    }
+
+    .inside {
+      border-right: none;
+    }
+
+    .box {
+      max-width: min-content;
+      font-size: $space-medium;
+    }
+  }
+}

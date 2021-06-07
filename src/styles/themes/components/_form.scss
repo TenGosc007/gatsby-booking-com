@@ -1,0 +1,86 @@
+.form {
+  background: $c-selectiveYellow;
+  border-radius: pxToRem(3);
+  padding: $space-standard;
+
+  &__header {
+    font-size: pxToRem(20);
+    line-height: pxToRem(28);
+    font-weight: 600;
+    margin: 0;
+    padding-bottom: $space-x-small;
+  }
+
+  &__label {
+    font-size: pxToRem(12);
+    line-height: pxToRem(18);
+  }
+
+  &__input-box {
+    background: $c-white;
+    padding: $space-x-small;
+    border-radius: pxToRem(2);
+    margin-bottom: $space-x-small;
+    display: flex;
+    align-items: center;
+    font-size: $space-small;
+    line-height: pxToRem(20);
+
+    img {
+      width: pxToRem(20);
+      padding-right: $space-x-small;
+    }
+  }
+
+  &__input {
+    display: block;
+    outline: none;
+    border: none;
+  }
+
+  &__select {
+    border: none;
+    outline: none;
+    width: 100%;
+  }
+
+  &__input-container {
+    display: flex;
+    box-sizing: border-box;
+    gap: pxToRem(4);
+  }
+
+  &__select-container {
+    margin-top: $space-medium;
+
+    select {
+      margin-bottom: pxToRem(4);
+    }
+  }
+
+  &__checkbox {
+    margin: pxToRem(12) 0;
+    display: flex;
+    align-items: center;
+
+    label {
+      padding-left: $space-x-small;
+      width: 100%;
+    }
+
+    img {
+      display: block;
+      justify-self: end;
+      width: $space-small;
+      filter: brightness(0.2);
+    }
+  }
+
+  button {
+    width: 100%;
+    font-size: $space-standard;
+    line-height: $space-medium;
+    height: $space-x-large;
+    border-radius: pxToRem(2);
+  }
+}

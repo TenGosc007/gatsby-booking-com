@@ -14,8 +14,10 @@
 @import "./components/card4";
 @import "./components/card5";
 @import "./components/card6";
+@import "./components/cardResult";
 @import "./components/customCarouselArrow.scss";
 @import "./components/footer";
+@import "./components/form";
 @import "./components/header";
 @import "./components/input";
 @import "./components/inputDate";
@@ -23,6 +25,7 @@
 @import "./components/inputPeople";
 @import "./components/input1";
 @import "./components/newsLetter";
+@import "./components/path";
 
 // import pages styles
 @import "./pages/404";
@@ -30,3 +33,4 @@
 @import "./pages/flights";
 @import "./pages/login";
 @import "./pages/mainPage";
+@import "./pages/searchresults";
