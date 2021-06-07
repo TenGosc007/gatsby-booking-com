@@ -18,12 +18,11 @@
       margin-bottom: $space-standard;
     }
 
-    &__column {
+    &__select {
+      border: none;
+      outline: none;
+      background: $c-white-opacity;
       font-size: $space-small;
-
-      label {
-        padding-left: pxToRem(4);
-      }
     }
   }
 

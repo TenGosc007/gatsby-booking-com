@@ -18,7 +18,6 @@ const InputDouble = () => {
           type="text"
           placeholder="Dokąd się wybierasz?"
           value={"WRO Lotnisko we Wrocławiu"}
-          onChange={(e) => dispatch(setValue(e.target.value))}
         />
       </div>
 
@@ -31,7 +30,7 @@ const InputDouble = () => {
         <input
           type="text"
           placeholder="Dokąd się wybierasz?"
-          value={"WAW Warszawa wszystkie lotniska"}
+          value={value}
           onChange={(e) => dispatch(setValue(e.target.value))}
         />
       </div>

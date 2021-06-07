@@ -1,0 +1,56 @@
+.radio {
+  display: block;
+  position: relative;
+  padding-left: $space-large;
+  cursor: pointer;
+  font-size: $space-small;
+  line-height: pxToRem(20);
+  color: $c-mineShaft;
+  user-select: none;
+
+  input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+
+  input:checked ~ &__checkmark {
+    background-color: $c-lochmara;
+    border: 1px solid $c-lochmara;
+  }
+
+  input:focus ~ &__checkmark {
+    border: 1px solid $c-lochmara;
+  }
+
+  input:checked ~ &__checkmark:after {
+    display: block;
+  }
+
+  &__checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: pxToRem(20);
+    width: pxToRem(20);
+    background-color: $c-white;
+    border: 1px solid $c-lochmara;
+    border-radius: 50%;
+    box-sizing: border-box;
+    overflow: hidden;
+
+    &::after {
+      content: "";
+      position: absolute;
+      display: none;
+      left: pxToRem(0);
+      top: pxToRem(0);
+      width: pxToRem(12);
+      height: pxToRem(12);
+      border: 3px solid $c-white;
+      border-radius: 50%;
+    }
+  }
+}

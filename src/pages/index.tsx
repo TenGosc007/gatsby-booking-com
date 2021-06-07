@@ -19,6 +19,7 @@ import NewsLetter from "components/NewsLetter";
 import Bar from "components/Bar";
 import Breadcrumb from "components/Breadcrumb";
 import CustomArrow from "components/CustomArrow";
+import Checkbox from "components/Checkbox";
 
 const responsive = {
   desktop: {
@@ -94,8 +95,7 @@ const IndexPage = ({ data }: any) => {
           </div>
 
           <div className="input-area__check">
-            <input id="trip" name="trip" type="checkbox" />
-            <label htmlFor="trip">Podróżuję służbowo </label>
+            <Checkbox>Podróżuję służbowo</Checkbox>
           </div>
         </div>
       </div>

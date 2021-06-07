@@ -6,6 +6,8 @@ import InputDouble from "components/InputDouble";
 import Button from "components/Button";
 import Accordion from "components/Accordion";
 import BarSimple from "components/BarSimple";
+import Checkbox from "components/Checkbox";
+import Radio from "components/Radio";
 
 import iconWorld from "assets/world.svg";
 import iconMagnifing from "assets/magnifing.svg";
@@ -39,23 +41,16 @@ const Flights = () => {
             </p>
 
             <div className="input-area__radio">
-              <div className="input-area__column">
-                <input type="radio" id="directions" />
-                <label htmlFor="directions">W obie strony</label>
-              </div>
+              <Radio>W obie strony</Radio>
+              <Radio>W jedną stronę</Radio>
+              <Radio>Kilka miast</Radio>
 
               <div className="input-area__column">
-                <input type="radio" id="direction" />
-                <label htmlFor="direction">W jedną stronę</label>
-              </div>
-
-              <div className="input-area__column">
-                <input type="radio" id="cities" />
-                <label htmlFor="cities">Kilka miast</label>
-              </div>
-
-              <div className="input-area__column">
-                <select name="flight-class" id="flightClass">
+                <select
+                  className="input-area__select"
+                  name="flight-class"
+                  id="flightClass"
+                >
                   <option value="Ekonomiczna">Ekonomiczna</option>
                   <option value="Premium">Ekonomiczna Premium</option>
                   <option value="Biznesowa">Biznesowa</option>
@@ -71,8 +66,7 @@ const Flights = () => {
             </div>
 
             <div className="input-area__check">
-              <input id="trip" name="trip" type="checkbox" />
-              <label htmlFor="trip">Tylko loty bezpośrednie</label>
+              <Checkbox>Tylko loty bezpośrednie</Checkbox>
             </div>
           </div>
         </div>

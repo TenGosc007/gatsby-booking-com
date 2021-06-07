@@ -1,0 +1,57 @@
+.checkbox {
+  display: block;
+  position: relative;
+  padding-left: $space-large;
+  cursor: pointer;
+  font-size: $space-small;
+  line-height: pxToRem(20);
+  color: $c-mineShaft;
+  user-select: none;
+
+  input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+
+  input:checked ~ &__checkmark {
+    background-color: $c-lochmara;
+    border: 1px solid $c-lochmara;
+  }
+
+  input:focus ~ &__checkmark {
+    border: 1px solid $c-lochmara;
+  }
+
+  input:checked ~ &__checkmark:after {
+    display: block;
+  }
+
+  &__checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: pxToRem(20);
+    width: pxToRem(20);
+    background-color: $c-white;
+    border: 1px solid $c-cloudy;
+    border-radius: pxToRem(3);
+    box-sizing: border-box;
+    overflow: hidden;
+
+    &::after {
+      content: "";
+      position: absolute;
+      display: none;
+      left: pxToRem(6);
+      top: pxToRem(3);
+      width: pxToRem(4);
+      height: pxToRem(10);
+      border: solid $c-white;
+      border-width: 0 2px 2px 0;
+      transform: rotate(45deg);
+    }
+  }
+}

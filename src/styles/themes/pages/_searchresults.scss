@@ -33,12 +33,11 @@
 
       label {
         display: flex;
-        justify-content: space-between;
         width: 100%;
-        padding-left: $space-x-small;
 
         span {
           color: $c-cloudy;
+          margin-left: auto;
         }
       }
     }

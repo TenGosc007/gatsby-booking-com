@@ -2,6 +2,7 @@ import React from "react";
 
 import Input1 from "components/Input1";
 import Button from "components/Button";
+import Checkbox from "components/Checkbox";
 
 const NewsLetter = () => {
   return (
@@ -17,10 +18,9 @@ const NewsLetter = () => {
       </div>
 
       <div className="news-letter__check">
-        <input id="confirm" name="confirm" type="checkbox" />
-        <label htmlFor="confirm">
+        <Checkbox>
           Wyślij mi link do pobrania BEZPŁATNEJ aplikacji Booking.com!
-        </label>
+        </Checkbox>
       </div>
     </div>
   );

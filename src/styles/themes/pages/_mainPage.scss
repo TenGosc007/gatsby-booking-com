@@ -43,16 +43,6 @@
 
   &__check {
     padding: $space-standard 0;
-
-    label {
-      padding-left: $space-x-small;
-      font-size: $space-small;
-      cursor: pointer;
-    }
-
-    input {
-      cursor: pointer;
-    }
   }
 }
 
