@@ -21,6 +21,7 @@
     display: flex;
     justify-content: center;
     gap: $space-x-small;
+    flex-wrap: wrap;
   }
 
   &__check {
@@ -38,5 +39,11 @@
   button {
     border-radius: pxToRem(3);
     font-weight: 300;
+  }
+}
+
+@media only screen and (max-width: $break-mobile) {
+  .news-letter {
+    padding: pxToRem(50) $space-standard;
   }
 }

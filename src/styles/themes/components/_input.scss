@@ -33,3 +33,9 @@
     cursor: pointer;
   }
 }
+
+@media only screen and (max-width: $break-mobile) {
+  .input {
+    width: 100%;
+  }
+}

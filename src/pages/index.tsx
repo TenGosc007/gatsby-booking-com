@@ -91,7 +91,7 @@ const IndexPage = ({ data }: any) => {
             <Input />
             <InputDate />
             <InputPeople />
-            <Button>Szukaj</Button>
+            <Button toPage="/searchresults">Szukaj</Button>
           </div>
 
           <div className="input-area__check">
@@ -104,8 +104,8 @@ const IndexPage = ({ data }: any) => {
         <h3 className="section-header">Szukaj według rodzaju obiektu</h3>
         <Carousel
           responsive={responsive}
-          swipeable={false}
-          draggable={false}
+          swipeable={true}
+          draggable={true}
           keyBoardControl={true}
           containerClass="card-area"
           customRightArrow={<CustomArrow type="right" />}
@@ -165,8 +165,8 @@ const IndexPage = ({ data }: any) => {
         </p>
         <Carousel
           responsive={responsive}
-          swipeable={false}
-          draggable={false}
+          swipeable={true}
+          draggable={true}
           keyBoardControl={true}
           containerClass="card-area"
           customRightArrow={<CustomArrow type="right" />}
@@ -190,8 +190,8 @@ const IndexPage = ({ data }: any) => {
         <h3 className="section-header">Domy, które goście kochają </h3>
         <Carousel
           responsive={responsiveSmall}
-          swipeable={false}
-          draggable={false}
+          swipeable={true}
+          draggable={true}
           keyBoardControl={true}
           containerClass="card-area"
           customRightArrow={<CustomArrow type="right" />}
@@ -275,8 +275,8 @@ const IndexPage = ({ data }: any) => {
       <div className="layout__container">
         <Carousel
           responsive={responsiveSmall}
-          swipeable={false}
-          draggable={false}
+          swipeable={true}
+          draggable={true}
           keyBoardControl={true}
           containerClass="card-area"
           customRightArrow={<CustomArrow type="right" />}

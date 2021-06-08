@@ -6,8 +6,6 @@ import NewsLetter from "components/NewsLetter";
 import Bar from "components/Bar";
 
 export default function Template({ data }: any) {
-  console.log(data);
-
   const post = data.markdownRemark;
 
   return (

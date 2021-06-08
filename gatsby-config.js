@@ -25,5 +25,6 @@ module.exports = {
         icon: `src/assets/favicon.png`,
       },
     },
+    "moment",
   ],
 };

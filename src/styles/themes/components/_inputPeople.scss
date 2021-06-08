@@ -36,3 +36,63 @@
     box-shadow: 0 0 0 1px #d59c00;
   }
 }
+
+.counter {
+  width: pxToRem(322);
+  font-size: $space-small;
+  padding: $space-x-small;
+  font-weight: 500;
+  box-sizing: border-box;
+
+  &__element {
+    padding: $space-x-small;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__container {
+    display: flex;
+    align-items: center;
+  }
+
+  &__text {
+    white-space: nowrap;
+
+    p {
+      margin: 0;
+      color: $c-cloudy;
+    }
+  }
+
+  &__btn {
+    outline: none;
+    box-sizing: border-box;
+    width: pxToRem(40);
+    height: pxToRem(40);
+    background-color: $c-white;
+    color: $c-lochmara;
+    border: 1px solid $c-lochmara;
+    border-radius: pxToRem(2);
+    cursor: pointer;
+    transition: 0.2s ease;
+
+    &:hover,
+    &:active {
+      background: $c-lochmara-opacity;
+    }
+  }
+
+  &__num {
+    min-width: pxToRem(36);
+    text-align: center;
+    margin: 0 pxToRem(4);
+  }
+}
+
+@media only screen and (max-width: $break-mobile) {
+  .input-people {
+    max-width: 100%;
+  }
+}

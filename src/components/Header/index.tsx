@@ -69,9 +69,11 @@ const Header = ({ number }: Props) => {
 
         <div className="header__mobile">
           <div className="header__item">
-            <button className="simplebtn">
-              <img className="img_circle" src={iconLogin} alt="login" />
-            </button>
+            <Link to="/login">
+              <button className="simplebtn">
+                <img className="img_circle" src={iconLogin} alt="login" />
+              </button>
+            </Link>
           </div>
           <div className="header__item">
             <button className="simplebtn" onClick={() => dispatch(toggle())}>

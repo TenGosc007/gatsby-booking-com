@@ -15,7 +15,8 @@
     padding: $space-large;
 
     img {
-      max-width: $break-mobile;
+      width: $break-mobile;
+      max-width: 100%;
     }
   }
 

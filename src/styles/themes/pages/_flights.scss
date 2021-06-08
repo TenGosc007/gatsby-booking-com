@@ -14,6 +14,7 @@
 
     &__radio {
       display: flex;
+      flex-wrap: wrap;
       gap: $space-medium;
       margin-bottom: $space-standard;
     }
@@ -32,6 +33,7 @@
     max-width: $break-standard;
     margin: pxToRem(64) auto;
     color: $c-mineShaft;
+    flex-wrap: wrap;
   }
 
   &__segment {
@@ -53,6 +55,14 @@
       font-size: $space-small;
       line-height: pxToRem(20);
       color: $c-masala;
+    }
+  }
+}
+
+@media only screen and (max-width: $break-mobile) {
+  .flights {
+    &__segment {
+      padding: $space-x-small 0;
     }
   }
 }

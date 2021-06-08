@@ -37,6 +37,7 @@
     border-radius: pxToRem(4);
     display: flex;
     gap: pxToRem(4);
+    flex-wrap: wrap;
     width: 100%;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
   }
@@ -80,4 +81,28 @@
   font-size: $space-standard;
   line-height: $space-medium;
   color: $c-cloudy;
+}
+
+@media only screen and (max-width: $break-mobile) {
+  .layout {
+    &__container {
+      padding: 0 $space-x-small;
+    }
+  }
+
+  .input-area {
+    &__container {
+      padding: $space-x-large $space-x-small;
+    }
+
+    &__area {
+      width: fit-content;
+      width: 100%;
+      box-sizing: border-box;
+    }
+  }
+
+  .card-area {
+    flex-wrap: wrap;
+  }
 }

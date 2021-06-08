@@ -37,3 +37,9 @@
     display: flex;
   }
 }
+
+@media only screen and (max-width: $break-mobile) {
+  .path {
+    display: none;
+  }
+}

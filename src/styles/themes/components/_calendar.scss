@@ -1,0 +1,89 @@
+.calendar {
+  width: pxToRem(245);
+  user-select: none;
+
+  &__header {
+    position: relative;
+    font-size: $space-standard;
+    font-weight: 700;
+    line-height: $space-medium;
+    margin-bottom: $space-x-small;
+    text-align: center;
+  }
+
+  &__arrow {
+    position: absolute;
+    top: 0;
+    cursor: pointer;
+    color: $c-cloudy;
+    font-weight: 400;
+    transition: 0.1s ease;
+
+    &:hover,
+    &:active {
+      filter: brightness(0.4);
+    }
+
+    &--left {
+      left: 0;
+    }
+
+    &--right {
+      right: 0;
+    }
+  }
+
+  &__body {
+    font-size: $space-small;
+    line-height: pxToRem(36);
+  }
+
+  &__day-names {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  &__week {
+    color: $c-masala;
+  }
+
+  &__container {
+    height: pxToRem(36);
+  }
+
+  &__day {
+    width: calc(100% / 7);
+    display: inline-block;
+    box-sizing: border-box;
+    text-align: center;
+    overflow: hidden;
+    cursor: pointer;
+
+    &:hover {
+      background: $c-opacity;
+    }
+  }
+
+  .hidden {
+    opacity: 0;
+    cursor: default;
+  }
+
+  .before {
+    color: $c-cloudy;
+  }
+
+  .selected {
+    background: $c-lochmara;
+    color: $c-white;
+
+    &:focus,
+    &:focus-within {
+      box-shadow: 0 0 0 3px rgba(0, 113, 194, 0.24);
+    }
+  }
+
+  .today {
+    color: $c-lochmara;
+  }
+}

@@ -33,9 +33,21 @@
     height: pxToRem(2);
   }
 
+  &__calendar {
+    display: flex;
+    gap: $space-standard;
+  }
+
   &:hover,
   &:active,
   &:focus {
     box-shadow: 0 0 0 1px #d59c00;
+  }
+}
+
+@media only screen and (max-width: $break-mobile) {
+  .input-date {
+    max-width: 100%;
+    min-width: 100%;
   }
 }

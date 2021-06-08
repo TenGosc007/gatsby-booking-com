@@ -1,0 +1,32 @@
+.popup {
+  position: absolute;
+  transform: translateY($space-xx-large);
+  padding: $space-standard;
+  margin-top: $space-x-small;
+  background: $c-white;
+  color: $c-mineShaft;
+  top: 0;
+  right: -30%;
+  z-index: 10;
+  border-radius: pxToRem(4);
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.15);
+  box-sizing: border-box;
+  cursor: default;
+}
+
+.popup-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: transparent;
+  width: 100vw;
+  height: 100vh;
+  cursor: default;
+}
+
+@media only screen and (max-width: $break-mobile) {
+  .popup {
+    max-width: 90vw;
+    right: 0;
+  }
+}
