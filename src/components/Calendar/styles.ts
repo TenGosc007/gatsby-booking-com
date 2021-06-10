@@ -1,23 +1,21 @@
-function isSelected(day: any, value: any, isClicked: boolean) {
-  return isClicked && value.isSame(day, "day");
-}
+import { Moment } from "moment";
 
-export function beforeToday(day: any) {
-  return day.isBefore(new Date(), "day");
-}
+const isSelected = (day: Moment, value: Moment, isClicked: boolean) =>
+  isClicked && value.isSame(day, "day");
 
-function isToday(day: any) {
-  return day.isSame(new Date(), "day");
-}
+export const beforeToday = (day: Moment) => day.isBefore(new Date(), "day");
 
-export function isNotThisMonth(day: any, value: any) {
-  return !(day.format("M") === value.format("M"));
-}
+const isToday = (day: Moment) => day.isSame(new Date(), "day");
 
-export default function dayStyles(day: any, value: any, isClicked: boolean) {
+export const isNotThisMonth = (day: Moment, value: Moment) =>
+  !(day.format("M") === value.format("M"));
+
+const dayStyles = (day: Moment, value: Moment, isClicked: boolean) => {
   if (isNotThisMonth(day, value)) return "hidden";
   if (beforeToday(day)) return "before";
   if (isSelected(day, value, isClicked)) return "selected";
   if (isToday(day)) return "today";
   return "";
-}
+};
+
+export default dayStyles;

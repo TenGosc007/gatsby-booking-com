@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import moment from "moment";
+import moment, { Moment } from "moment";
 
 import Popup from "components/Popup";
 import Calendar from "components/Calendar";
@@ -8,7 +8,7 @@ import iconCallendar from "assets/callendar.svg";
 
 const InputDate = () => {
   const [isClicked, setIsClicked] = useState(false);
-  const [value1, setValue1] = useState(moment());
+  const [value1, setValue1] = useState<Moment>(moment());
   const [value2, setValue2] = useState(moment());
 
   useEffect(() => {

@@ -14,7 +14,12 @@ import {
 } from "state/counter";
 import Popup from "components/Popup";
 
-const Options = ({ isClicked, setIsClicked }: any) => {
+interface Props {
+  isClicked: boolean;
+  setIsClicked: (e: boolean) => void;
+}
+
+const Options = ({ isClicked, setIsClicked }: Props) => {
   const adult = useSelector(selectAdult);
   const children = useSelector(selectChildren);
   const rooms = useSelector(selectRooms);

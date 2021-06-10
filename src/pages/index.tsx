@@ -20,42 +20,7 @@ import Bar from "components/Bar";
 import Breadcrumb from "components/Breadcrumb";
 import CustomArrow from "components/CustomArrow";
 import Checkbox from "components/Checkbox";
-
-const responsive = {
-  desktop: {
-    breakpoint: { max: 3000, min: 1024 },
-    items: 5,
-    slidesToSlide: 1, // optional, default to 1.
-  },
-  tablet: {
-    breakpoint: { max: 1024, min: 650 },
-    items: 3,
-    slidesToSlide: 1, // optional, default to 1.
-  },
-  mobile: {
-    breakpoint: { max: 650, min: 0 },
-    items: 1,
-    slidesToSlide: 1, // optional, default to 1.
-  },
-};
-
-const responsiveSmall = {
-  desktop: {
-    breakpoint: { max: 3000, min: 1024 },
-    items: 4,
-    slidesToSlide: 1, // optional, default to 1.
-  },
-  tablet: {
-    breakpoint: { max: 1024, min: 650 },
-    items: 2,
-    slidesToSlide: 1, // optional, default to 1.
-  },
-  mobile: {
-    breakpoint: { max: 650, min: 0 },
-    items: 1,
-    slidesToSlide: 1, // optional, default to 1.
-  },
-};
+import { responsive, responsiveSmall } from "utils/caruselConfig";
 
 const IndexPage = ({ data }: any) => {
   return (

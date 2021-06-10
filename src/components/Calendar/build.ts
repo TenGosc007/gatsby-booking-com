@@ -1,6 +1,6 @@
 import { Moment } from "moment";
 
-export default function buildCalendar(value: Moment) {
+const buildCalendar = (value: Moment) => {
   const startDay = value.clone().startOf("month").startOf("isoWeek");
   const endDay = value.clone().endOf("month").endOf("isoWeek");
   const day = startDay.clone().subtract(1, "day");
@@ -14,4 +14,6 @@ export default function buildCalendar(value: Moment) {
   }
 
   return calendar;
-}
+};
+
+export default buildCalendar;

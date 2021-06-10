@@ -1,12 +1,19 @@
 import React, { useEffect, useState } from "react";
-import { useSelector, useDispatch } from "react-redux";
 import { Moment } from "moment";
 
 import buildCalendar from "./build";
 import dayStyles, { beforeToday, isNotThisMonth } from "./styles";
 import Header from "./header";
 
-const Calendar = ({ value, onChange, left, right, otherVal }: any) => {
+interface Props {
+  value: Moment;
+  onChange: any;
+  left?: boolean;
+  right?: boolean;
+  otherVal: any;
+}
+
+const Calendar = ({ value, onChange, left, right, otherVal }: Props) => {
   const [calendar, setCalendar] = useState<Moment[][]>([]);
   const [isClicked, setIsClicked] = useState(false);
 
@@ -33,9 +40,9 @@ const Calendar = ({ value, onChange, left, right, otherVal }: any) => {
             )
           )}
         </div>
-        {calendar.map((week: any, i: number) => (
+        {calendar.map((week: Moment[], i: number) => (
           <div key={i} className="calendar__container">
-            {week.map((day: any, i: number) => (
+            {week.map((day: Moment, i: number) => (
               <div
                 key={i}
                 className="calendar__day"

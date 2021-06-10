@@ -1,27 +1,30 @@
 import React from "react";
+import { Moment } from "moment";
 
-const CalendarHeader = ({ value, setValue, left, right, otherVal }: any) => {
-  function currMonthName() {
-    return value.locale("pl").format("MMMM");
-  }
+interface Props {
+  value: Moment;
+  setValue: any;
+  left?: boolean | undefined;
+  right?: boolean | undefined;
+  otherVal: any;
+}
 
-  function currYearName() {
-    return value.format("YYYY");
-  }
+const CalendarHeader = ({ value, setValue, left, right, otherVal }: Props) => {
+  const currMonthName = () => value.locale("pl").format("MMMM");
 
-  function prevMonth() {
+  const currYearName = () => value.format("YYYY");
+
+  const prevMonth = () => {
     otherVal(value);
     return value.clone().subtract(1, "month");
-  }
+  };
 
-  function nextMonth() {
+  const nextMonth = () => {
     otherVal(value);
     return value.clone().add(1, "month");
-  }
+  };
 
-  function thisMonth() {
-    return value.isSame(new Date(), "month");
-  }
+  const thisMonth = () => value.isSame(new Date(), "month");
 
   return (
     <div className="calendar__header">

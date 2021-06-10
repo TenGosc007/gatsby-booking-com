@@ -1,0 +1,263 @@
+Date : 2021-06-08 21:41:08
+Directory : c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src
+Total : 183 files,  5767 codes, 160 comments, 952 blanks, all 6879 lines
+
+Languages
++------------------+------------+------------+------------+------------+------------+
+| language         | files      | code       | comment    | blank      | total      |
++------------------+------------+------------+------------+------------+------------+
+| SCSS             |         38 |      2,339 |        150 |        454 |      2,943 |
+| TypeScript React |         37 |      2,096 |          1 |        274 |      2,371 |
+| Markdown         |         46 |        607 |          0 |        177 |        784 |
+| XML              |         53 |        336 |          3 |          2 |        341 |
+| JSON             |          1 |        212 |          0 |          1 |        213 |
+| TypeScript       |          8 |        177 |          6 |         44 |        227 |
++------------------+------------+------------+------------+------------+------------+
+
+Directories
++---------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                                    | files      | code       | comment    | blank      | total      |
++---------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                                       |        183 |      5,767 |        160 |        952 |      6,879 |
+| assets                                                                                                  |         53 |        336 |          3 |          2 |        341 |
+| components                                                                                              |         33 |      1,361 |          1 |        207 |      1,569 |
+| components\Accordion                                                                                    |          1 |         40 |          0 |          8 |         48 |
+| components\Bar                                                                                          |          1 |         19 |          0 |          4 |         23 |
+| components\BarSimple                                                                                    |          1 |         18 |          0 |          3 |         21 |
+| components\Breadcrumb                                                                                   |          1 |        101 |          0 |          4 |        105 |
+| components\Button                                                                                       |          1 |         14 |          0 |          4 |         18 |
+| components\Calendar                                                                                     |          4 |        130 |          0 |         22 |        152 |
+| components\Card1                                                                                        |          1 |         33 |          0 |          6 |         39 |
+| components\Card2                                                                                        |          1 |         36 |          0 |          5 |         41 |
+| components\Card3                                                                                        |          1 |         38 |          0 |          7 |         45 |
+| components\Card4                                                                                        |          1 |         25 |          0 |          5 |         30 |
+| components\Card5                                                                                        |          1 |         34 |          0 |          5 |         39 |
+| components\Card6                                                                                        |          1 |         24 |          0 |          4 |         28 |
+| components\Checkbox                                                                                     |          1 |         14 |          0 |          4 |         18 |
+| components\CustomArrow                                                                                  |          1 |         20 |          1 |          4 |         25 |
+| components\Footer                                                                                       |          1 |         89 |          0 |         10 |         99 |
+| components\Form                                                                                         |          1 |         91 |          0 |         15 |        106 |
+| components\Header                                                                                       |          2 |        233 |          0 |         22 |        255 |
+| components\Input                                                                                        |          1 |         26 |          0 |          6 |         32 |
+| components\Input1                                                                                       |          1 |          5 |          0 |          3 |          8 |
+| components\InputDate                                                                                    |          1 |         51 |          0 |          8 |         59 |
+| components\InputDouble                                                                                  |          1 |         35 |          0 |          8 |         43 |
+| components\InputPeople                                                                                  |          2 |        121 |          0 |         14 |        135 |
+| components\Layout                                                                                       |          1 |         20 |          0 |          5 |         25 |
+| components\NewsLetter                                                                                   |          1 |         24 |          0 |          6 |         30 |
+| components\Path                                                                                         |          1 |         16 |          0 |          5 |         21 |
+| components\Popup                                                                                        |          1 |         14 |          0 |          4 |         18 |
+| components\Radio                                                                                        |          1 |         14 |          0 |          4 |         18 |
+| components\ResultCard                                                                                   |          1 |         76 |          0 |         12 |         88 |
+| pages                                                                                                   |         51 |      1,330 |          0 |        244 |      1,574 |
+| pages\cards                                                                                             |         46 |        607 |          0 |        177 |        784 |
+| pages\cards\cities                                                                                      |          5 |         50 |          0 |          5 |         55 |
+| pages\cards\contact                                                                                     |          4 |         40 |          0 |          4 |         44 |
+| pages\cards\discover                                                                                    |          8 |         80 |          0 |          8 |         88 |
+| pages\cards\houses                                                                                      |          5 |         50 |          0 |          5 |         55 |
+| pages\cards\inspirations                                                                                |          5 |        185 |          0 |        136 |        321 |
+| pages\cards\more                                                                                        |          5 |         50 |          0 |          5 |         55 |
+| pages\cards\object-kinds                                                                                |          8 |         80 |          0 |          8 |         88 |
+| pages\cards\regions                                                                                     |          6 |         72 |          0 |          6 |         78 |
+| state                                                                                                   |          5 |        139 |          0 |         33 |        172 |
+| state\accordion                                                                                         |          1 |         20 |          0 |          7 |         27 |
+| state\counter                                                                                           |          1 |         48 |          0 |          7 |         55 |
+| state\header                                                                                            |          1 |         26 |          0 |          7 |         33 |
+| state\input                                                                                             |          1 |         23 |          0 |          7 |         30 |
+| styles                                                                                                  |         38 |      2,339 |        150 |        454 |      2,943 |
+| styles\themes                                                                                           |         33 |      2,078 |          2 |        357 |      2,437 |
+| styles\themes\components                                                                                |         26 |      1,552 |          0 |        262 |      1,814 |
+| styles\themes\pages                                                                                     |          6 |        490 |          0 |         92 |        582 |
+| templates                                                                                               |          1 |         46 |          0 |          8 |         54 |
+| utils                                                                                                   |          1 |        212 |          0 |          1 |        213 |
++---------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++---------------------------------------------------------------------------------------------------------+------------------+------------+------------+------------+------------+
+| filename                                                                                                | language         | code       | comment    | blank      | total      |
++---------------------------------------------------------------------------------------------------------+------------------+------------+------------+------------+------------+
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\assets\apple.svg                                   | XML              |          1 |          0 |          0 |          1 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\assets\arrowDown.svg                               | XML              |          3 |          0 |          0 |          3 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\assets\arrowLeft.svg                               | XML              |          1 |          0 |          0 |          1 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\assets\arrowRight.svg                              | XML              |          1 |          0 |          0 |          1 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\assets\arrowUp.svg                                 | XML              |          1 |          0 |          0 |          1 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\assets\arrowUp2.svg                                | XML              |          3 |          0 |          0 |          3 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\assets\arrows.svg                                  | XML              |         23 |          1 |          0 |         24 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\assets\arrowsHor.svg                               | XML              |          1 |          0 |          0 |          1 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\assets\balance.svg                                 | XML              |          1 |          0 |          0 |          1 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\assets\bed.svg                                     | XML              |          1 |          0 |          0 |          1 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\assets\book.svg                                    | XML              |          1 |          0 |          0 |          1 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\assets\bookingIcon.svg                             | XML              |          1 |          0 |          0 |          1 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\assets\booking_logo.svg                            | XML              |        217 |          1 |          2 |        220 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\assets\callendar.svg                               | XML              |          1 |          0 |          0 |          1 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\assets\car.svg                                     | XML              |          1 |          0 |          0 |          1 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\assets\close.svg                                   | XML              |          1 |          0 |          0 |          1 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\assets\cookie.svg                                  | XML              |          1 |          0 |          0 |          1 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\assets\correctCircle.svg                           | XML              |          4 |          0 |          0 |          4 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\assets\emptyCircle.svg                             | XML              |          3 |          0 |          0 |          3 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\assets\facebook.svg                                | XML              |          1 |          0 |          0 |          1 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\assets\flight.svg                                  | XML              |          1 |          0 |          0 |          1 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\assets\forum.svg                                   | XML              |          1 |          0 |          0 |          1 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\assets\genius.svg                                  | XML              |         16 |          0 |          0 |         16 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\assets\google.svg                                  | XML              |          1 |          0 |          0 |          1 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\assets\hamburger.svg                               | XML              |          1 |          0 |          0 |          1 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\assets\hands.svg                                   | XML              |          1 |          0 |          0 |          1 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\assets\heart.svg                                   | XML              |          1 |          0 |          0 |          1 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\assets\home.svg                                    | XML              |          1 |          0 |          0 |          1 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\assets\info.svg                                    | XML              |          1 |          0 |          0 |          1 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\assets\infoDark.svg                                | XML              |          1 |          0 |          0 |          1 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\assets\infoWarning.svg                             | XML              |          1 |          0 |          0 |          1 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\assets\left.svg                                    | XML              |          1 |          0 |          0 |          1 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\assets\like.svg                                    | XML              |          5 |          0 |          0 |          5 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\assets\login.svg                                   | XML              |          1 |          0 |          0 |          1 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\assets\magnifing.svg                               | XML              |          1 |          0 |          0 |          1 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\assets\mobile.svg                                  | XML              |          1 |          0 |          0 |          1 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\assets\more.svg                                    | XML              |          1 |          0 |          0 |          1 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\assets\offer.svg                                   | XML              |          1 |          0 |          0 |          1 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\assets\paper.svg                                   | XML              |          1 |          0 |          0 |          1 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\assets\partner.svg                                 | XML              |          1 |          0 |          0 |          1 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\assets\percent.svg                                 | XML              |          1 |          0 |          0 |          1 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\assets\percents.svg                                | XML              |          1 |          0 |          0 |          1 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\assets\person.svg                                  | XML              |         16 |          1 |          0 |         17 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\assets\plane.svg                                   | XML              |          1 |          0 |          0 |          1 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\assets\planeHover.svg                              | XML              |          1 |          0 |          0 |          1 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\assets\question.svg                                | XML              |          1 |          0 |          0 |          1 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\assets\quiet.svg                                   | XML              |          3 |          0 |          0 |          3 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\assets\right.svg                                   | XML              |          1 |          0 |          0 |          1 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\assets\rollercoster.svg                            | XML              |          1 |          0 |          0 |          1 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\assets\rules.svg                                   | XML              |          1 |          0 |          0 |          1 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\assets\search.svg                                  | XML              |          1 |          0 |          0 |          1 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\assets\taxi.svg                                    | XML              |          1 |          0 |          0 |          1 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\assets\world.svg                                   | XML              |          1 |          0 |          0 |          1 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\components\Accordion\index.tsx                     | TypeScript React |         40 |          0 |          8 |         48 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\components\BarSimple\index.tsx                     | TypeScript React |         18 |          0 |          3 |         21 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\components\Bar\index.tsx                           | TypeScript React |         19 |          0 |          4 |         23 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\components\Breadcrumb\index.tsx                    | TypeScript React |        101 |          0 |          4 |        105 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\components\Button\index.tsx                        | TypeScript React |         14 |          0 |          4 |         18 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\components\Calendar\build.ts                       | TypeScript       |         15 |          0 |          3 |         18 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\components\Calendar\header.tsx                     | TypeScript React |         40 |          0 |          8 |         48 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\components\Calendar\index.tsx                      | TypeScript React |         56 |          0 |          6 |         62 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\components\Calendar\styles.ts                      | TypeScript       |         19 |          0 |          5 |         24 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\components\Card1\index.tsx                         | TypeScript React |         33 |          0 |          6 |         39 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\components\Card2\index.tsx                         | TypeScript React |         36 |          0 |          5 |         41 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\components\Card3\index.tsx                         | TypeScript React |         38 |          0 |          7 |         45 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\components\Card4\index.tsx                         | TypeScript React |         25 |          0 |          5 |         30 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\components\Card5\index.tsx                         | TypeScript React |         34 |          0 |          5 |         39 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\components\Card6\index.tsx                         | TypeScript React |         24 |          0 |          4 |         28 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\components\Checkbox\index.tsx                      | TypeScript React |         14 |          0 |          4 |         18 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\components\CustomArrow\index.tsx                   | TypeScript React |         20 |          1 |          4 |         25 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\components\Footer\index.tsx                        | TypeScript React |         89 |          0 |         10 |         99 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\components\Form\index.tsx                          | TypeScript React |         91 |          0 |         15 |        106 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\components\Header\index.tsx                        | TypeScript React |        127 |          0 |         12 |        139 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\components\Header\submenu.tsx                      | TypeScript React |        106 |          0 |         10 |        116 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\components\Input1\index.tsx                        | TypeScript React |          5 |          0 |          3 |          8 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\components\InputDate\index.tsx                     | TypeScript React |         51 |          0 |          8 |         59 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\components\InputDouble\index.tsx                   | TypeScript React |         35 |          0 |          8 |         43 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\components\InputPeople\index.tsx                   | TypeScript React |         34 |          0 |          7 |         41 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\components\InputPeople\options.tsx                 | TypeScript React |         87 |          0 |          7 |         94 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\components\Input\index.tsx                         | TypeScript React |         26 |          0 |          6 |         32 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\components\Layout\layout.tsx                       | TypeScript React |         20 |          0 |          5 |         25 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\components\NewsLetter\index.tsx                    | TypeScript React |         24 |          0 |          6 |         30 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\components\Path\index.tsx                          | TypeScript React |         16 |          0 |          5 |         21 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\components\Popup\index.tsx                         | TypeScript React |         14 |          0 |          4 |         18 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\components\Radio\index.tsx                         | TypeScript React |         14 |          0 |          4 |         18 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\components\ResultCard\index.tsx                    | TypeScript React |         76 |          0 |         12 |         88 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\declarations.d.ts                                  | TypeScript       |          4 |          6 |          3 |         13 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\pages\404.tsx                                      | TypeScript React |         51 |          0 |         10 |         61 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\pages\cards\cities\karpacz.md                      | Markdown         |         10 |          0 |          1 |         11 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\pages\cards\cities\krakow.md                       | Markdown         |         10 |          0 |          1 |         11 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\pages\cards\cities\poznan.md                       | Markdown         |         10 |          0 |          1 |         11 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\pages\cards\cities\warszawa.md                     | Markdown         |         10 |          0 |          1 |         11 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\pages\cards\cities\wroclaw.md                      | Markdown         |         10 |          0 |          1 |         11 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\pages\cards\contact\Polska.md                      | Markdown         |         10 |          0 |          1 |         11 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\pages\cards\contact\brazylia.md                    | Markdown         |         10 |          0 |          1 |         11 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\pages\cards\contact\travelTalk.md                  | Markdown         |         10 |          0 |          1 |         11 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\pages\cards\contact\wiecej.md                      | Markdown         |         10 |          0 |          1 |         11 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\pages\cards\discover\gdansk.md                     | Markdown         |         10 |          0 |          1 |         11 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\pages\cards\discover\krakow.md                     | Markdown         |         10 |          0 |          1 |         11 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\pages\cards\discover\mazury.md                     | Markdown         |         10 |          0 |          1 |         11 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\pages\cards\discover\morzeBaltyckie.md             | Markdown         |         10 |          0 |          1 |         11 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\pages\cards\discover\sopot.md                      | Markdown         |         10 |          0 |          1 |         11 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\pages\cards\discover\warszawa.md                   | Markdown         |         10 |          0 |          1 |         11 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\pages\cards\discover\wroclaw.md                    | Markdown         |         10 |          0 |          1 |         11 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\pages\cards\discover\zakopane.md                   | Markdown         |         10 |          0 |          1 |         11 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\pages\cards\houses\belinskogo.md                   | Markdown         |         10 |          0 |          1 |         11 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\pages\cards\houses\casaDiEdi.md                    | Markdown         |         10 |          0 |          1 |         11 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\pages\cards\houses\lemanLocke.md                   | Markdown         |         10 |          0 |          1 |         11 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\pages\cards\houses\residenceLeCopacabana.md        | Markdown         |         10 |          0 |          1 |         11 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\pages\cards\houses\sugarLoft.md                    | Markdown         |         10 |          0 |          1 |         11 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\pages\cards\inspirations\domyWakacyjne.md          | Markdown         |         37 |          0 |         28 |         65 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\pages\cards\inspirations\jeziora.md                | Markdown         |         37 |          0 |         27 |         64 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\pages\cards\inspirations\miejsca.md                | Markdown         |         37 |          0 |         27 |         64 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\pages\cards\inspirations\podroze.md                | Markdown         |         37 |          0 |         27 |         64 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\pages\cards\inspirations\przewodnik.md             | Markdown         |         37 |          0 |         27 |         64 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\pages\cards\more\francja.md                        | Markdown         |         10 |          0 |          1 |         11 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\pages\cards\more\hiszpania.md                      | Markdown         |         10 |          0 |          1 |         11 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\pages\cards\more\niemcy.md                         | Markdown         |         10 |          0 |          1 |         11 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\pages\cards\more\usa.md                            | Markdown         |         10 |          0 |          1 |         11 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\pages\cards\more\wlochy.md                         | Markdown         |         10 |          0 |          1 |         11 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\pages\cards\object-kinds\apartamenty.md            | Markdown         |         10 |          0 |          1 |         11 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\pages\cards\object-kinds\domki.md                  | Markdown         |         10 |          0 |          1 |         11 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\pages\cards\object-kinds\domkiWiejskie.md          | Markdown         |         10 |          0 |          1 |         11 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\pages\cards\object-kinds\hotele.md                 | Markdown         |         10 |          0 |          1 |         11 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\pages\cards\object-kinds\hoteleApartamentowe.md    | Markdown         |         10 |          0 |          1 |         11 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\pages\cards\object-kinds\luksusowyKemping.md       | Markdown         |         10 |          0 |          1 |         11 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\pages\cards\object-kinds\osrodkiWypoczyknowe.md    | Markdown         |         10 |          0 |          1 |         11 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\pages\cards\object-kinds\wille.md                  | Markdown         |         10 |          0 |          1 |         11 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\pages\cards\regions\gdansk.md                      | Markdown         |         12 |          0 |          1 |         13 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\pages\cards\regions\karpacz.md                     | Markdown         |         14 |          0 |          1 |         15 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\pages\cards\regions\katowice.md                    | Markdown         |         12 |          0 |          1 |         13 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\pages\cards\regions\lodz.md                        | Markdown         |         12 |          0 |          1 |         13 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\pages\cards\regions\szklarska.md                   | Markdown         |         10 |          0 |          1 |         11 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\pages\cards\regions\zakopane.md                    | Markdown         |         12 |          0 |          1 |         13 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\pages\flights.tsx                                  | TypeScript React |         99 |          0 |         12 |        111 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\pages\index.tsx                                    | TypeScript React |        323 |          0 |         22 |        345 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\pages\login.tsx                                    | TypeScript React |         58 |          0 |         10 |         68 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\pages\searchresults.tsx                            | TypeScript React |        192 |          0 |         13 |        205 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\state\accordion\index.ts                           | TypeScript       |         20 |          0 |          7 |         27 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\state\counter\index.ts                             | TypeScript       |         48 |          0 |          7 |         55 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\state\header\index.ts                              | TypeScript       |         26 |          0 |          7 |         33 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\state\input\index.ts                               | TypeScript       |         23 |          0 |          7 |         30 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\state\store.ts                                     | TypeScript       |         22 |          0 |          5 |         27 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\styles\fonts.scss                                  | SCSS             |          2 |          0 |          1 |          3 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\styles\global.scss                                 | SCSS             |         56 |          0 |         11 |         67 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\styles\mixins.scss                                 | SCSS             |          3 |          1 |          1 |          5 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\styles\normalize.scss                              | SCSS             |        146 |        131 |         75 |        352 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\styles\themes\components\_accordion.scss           | SCSS             |         46 |          0 |         10 |         56 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\styles\themes\components\_bar.scss                 | SCSS             |         45 |          0 |          8 |         53 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\styles\themes\components\_breadcrumb.scss          | SCSS             |         49 |          0 |          8 |         57 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\styles\themes\components\_button.scss              | SCSS             |         20 |          0 |          3 |         23 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\styles\themes\components\_calendar.scss            | SCSS             |         73 |          0 |         17 |         90 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\styles\themes\components\_card1.scss               | SCSS             |         74 |          0 |          9 |         83 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\styles\themes\components\_card2.scss               | SCSS             |         30 |          0 |          5 |         35 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\styles\themes\components\_card3.scss               | SCSS             |         60 |          0 |         10 |         70 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\styles\themes\components\_card4.scss               | SCSS             |         55 |          0 |          7 |         62 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\styles\themes\components\_card5.scss               | SCSS             |         72 |          0 |          9 |         81 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\styles\themes\components\_card6.scss               | SCSS             |         55 |          0 |          7 |         62 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\styles\themes\components\_cardResult.scss          | SCSS             |        169 |          0 |         30 |        199 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\styles\themes\components\_checkbox.scss            | SCSS             |         51 |          0 |          7 |         58 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\styles\themes\components\_customCarouselArrow.scss | SCSS             |         30 |          0 |          5 |         35 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\styles\themes\components\_footer.scss              | SCSS             |         60 |          0 |         11 |         71 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\styles\themes\components\_form.scss                | SCSS             |         73 |          0 |         14 |         87 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\styles\themes\components\_header.scss              | SCSS             |        208 |          0 |         38 |        246 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\styles\themes\components\_input.scss               | SCSS             |         36 |          0 |          6 |         42 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\styles\themes\components\_input1.scss              | SCSS             |         12 |          0 |          1 |         13 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\styles\themes\components\_inputDate.scss           | SCSS             |         46 |          0 |          8 |         54 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\styles\themes\components\_inputDouble.scss         | SCSS             |         45 |          0 |          7 |         52 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\styles\themes\components\_inputPeople.scss         | SCSS             |         83 |          0 |         16 |         99 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\styles\themes\components\_newsLetter.scss          | SCSS             |         42 |          0 |          8 |         50 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\styles\themes\components\_path.scss                | SCSS             |         38 |          0 |          8 |         46 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\styles\themes\components\_popup.scss               | SCSS             |         30 |          0 |          3 |         33 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\styles\themes\components\_radio.scss               | SCSS             |         50 |          0 |          7 |         57 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\styles\themes\pages\_404.scss                      | SCSS             |         88 |          0 |         17 |        105 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\styles\themes\pages\_blogPost.scss                 | SCSS             |         32 |          0 |          8 |         40 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\styles\themes\pages\_flights.scss                  | SCSS             |         59 |          0 |         10 |         69 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\styles\themes\pages\_login.scss                    | SCSS             |         97 |          0 |         17 |        114 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\styles\themes\pages\_mainPage.scss                 | SCSS             |         93 |          0 |         16 |        109 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\styles\themes\pages\_searchresults.scss            | SCSS             |        121 |          0 |         24 |        145 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\styles\themes\theme.scss                           | SCSS             |         36 |          2 |          3 |         41 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\styles\variables.scss                              | SCSS             |         54 |         16 |          9 |         79 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\templates\blog-post.tsx                            | TypeScript React |         46 |          0 |          8 |         54 |
+| c:\Users\oloa\OneDrive\Pulpit\gatsby-booking-com\src\utils\booking-hotel-scraper-04-Jun-2021.json       | JSON             |        212 |          0 |          1 |        213 |
+| Total                                                                                                   |                  |      5,767 |        160 |        952 |      6,879 |
++---------------------------------------------------------------------------------------------------------+------------------+------------+------------+------------+------------+
